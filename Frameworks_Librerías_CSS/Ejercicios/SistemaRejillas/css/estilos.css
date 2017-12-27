@@ -1,0 +1,53 @@
+/* Estilos generales  */
+body{
+    background-color: #F7D988;
+}
+header{
+  width: 100%;
+  background-color: #C9F3CC;
+  text-align: center;
+}
+/* Contenedor principal invisible */
+.ppal{
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Estilos para todos los contenedores secundarios */
+div[class*='contenedor']{
+  width: 30%;
+  margin: 0.4vw;
+  padding: 0.5vw;
+  min-height: 200px;
+  border: 1px solid black;
+  background-color: #C29E3D;
+}
+
+div[id*='cuadro']{
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.5vw;
+  min-width: 100px;
+  border: 10px solid black;
+  background-color: #C29E3D;
+
+}
+
+/* Estilos para las imágenes */
+img{
+  width: 90%;
+}
+
+#cuadro1,#cuadro4,#cuadro7{
+  -webkit-box-sizing: border-box;
+}
+#cuadro2,#cuadro5,#cuadro8{
+  box-sizing: content-box;
+}
+
+/* Solo se puede utilizar en firefox */
+#cuadro3,#cuadro6,#cuadro9{
+  -moz- box-sizing: padding-box;
+}
