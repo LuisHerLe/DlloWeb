@@ -1,0 +1,32 @@
+Ayudas para Bootstrap
+
+*****:::::----- Declaraciones y especificaciones -----:::::*****
+
+- Los contenedores deben llevar la clase container
+	* .container: Las filas siempre se definen dentro de un contenedor de anchura fija
+	* .container-fluid: Las filas siempre se definen dentro de un contenedor de anchura variable
+- Las filas se denominan "row"
+- Los nav se denominan "navbar"
+	* La clase navbar-inverse genera una barra de navegación predefinida con width del 100% + color + border-radius
+- Los nombres de las columnas para el sistema de rejilla son (Las X es el número de columnas que no debe pasar de 12 por fila):
+	* col-lg-X (Grande PC): Para pantallas mayores de 1200px
+	* col-md-X (Mediano PC): Para pantallas mayores de 992px
+	* col-sm-X (Pequeño Tablets): Para pantallas mayores de 768px
+	* col-xs-X (Extra pequeño Teléfonos): Para pantallas menores de 768px Nunca colapsan las colunnas
+	
+- Reset Column: Especificar varios tamaños dentro de la misma clase
+	* Ejemplo: <div class="col-lg-2 col-md-4 col-sm-5 col-xs-6"....>Contenido</div>
+	
+- 
+
+*****:::::----- Otras especificaciones  -----:::::*****
+
+- Offset: Columnas sin contenido (A la IZQUIERDA) y permitir el ajuste de las columnas creadas para pantallas de tamaño inferior
+- Wrap: Cuando se excede el número de columnas en una fila se baja de fila buscando donde ponerse, no necesariamente a la izquierda
+- Push: Desplaza la columna hacia la derecha (Se come parte de la columna de la derecha)
+- Pull: Desplaza la columna hacia la Izquierda (Se come parte de la columna de la izquierda) 
+- affix-top: Para indicar que el contenedor va a quedar arriba (Debe ir con navbar-fixed-top)
+- affix-bottom: Para indicar que el contenedor va a quedar abajo (Debe ir con navbar-fixed-bottom)
+- navbar-fixed-top: Para indicar que la barra de navegación va a quedar visible siempre arriba sin importar el scroll
+- navbar-fixed-bottom: Para indicar que la barra de navegación va a quedar visible siempre abajo sin importar el scroll
+- jumbotron: Se trata de un componente para mostrar contenidos de forma muy destacada. Si no lo encierras dentro de un elemento .container, ocupa toda la anchura del dispositivo. Si lo encierras dentro de un .container, solamente ocupará la anchura del contenedor y mostrará esquinas redondeadas
