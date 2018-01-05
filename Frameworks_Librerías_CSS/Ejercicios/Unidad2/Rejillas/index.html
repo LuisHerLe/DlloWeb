@@ -2,36 +2,96 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="viewport" content="width=device-width, user-scalable=1">
   <title>Ejercicio de Codificación - Manejo de Bootstrap</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body class="cinema-body">
   <header>
-    <nav class="navbar navbar-inverse navbar-fixed-top affix-top"></nav>
+    <nav class="navbar navbar-inverse navbar-fixed-top affix-top">
+      <img class="logo-img" src="img/logo.png" alt="Logo" title="Logo">
+    </nav>
   </header>
   <div class="container-fluid">
     <!-- Punto 8 -->
     <div class="row">
-      <div class="jumbotron"></div>
-      <div class="titulo-cartelera"></div>
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 text-center">
+            <h2 class="text-uppercase wellcome-title">bienvenidos a</h2>
+            <img class="jumbotron-img" src="img/logo.png" alt="Logo">
+            <div class="jumbotron-text">Siguenos en nuestras <abbr title="Facebook, Twitter, Instagram">redes sociales</abbr> para obtener información sobre los últimos estrenos de cine</div>
+            <div class="redes-sociales">
+              <img class="img-rounded img-social" src="img/fb.png" alt="Facebok" title="Facebok">
+              <img class="img-rounded img-social" src="img/it.png" alt="Instagram" title="Instagram">
+              <img class="img-rounded img-social" src="img/tt.png" alt="Twitter" title="Twitter">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="titulo-cartelera">
+        <header class="text-capitalize text-center titulo-text">películas en cartelera</header>
+      </div>
     </div>
     <!-- Punto 9 -->
     <div class="row movies-row">
       <!-- Se agregan 6 columnas -->
-      <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 movies-column text-center"></div>
-      <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 movies-column text-center"></div>
-      <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 movies-column text-center"></div>
-      <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 movies-column text-center"></div>
-      <div class="col-lg-2 col-md-2 movies-column right-column text-center"></div>
-      <div class="col-lg-2 col-md-2 movies-column right-column text-center"></div>
+      <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 movies-column text-center">
+        <div class="row movie-title">
+          <img class="img-movies" src="img/car_chaplin.jpg" alt="Charles Chaplin">
+        </div>
+        <div class="row movie-title">C.C - Tiempos Modernos</div>
+        <div class="row movie-title">Sala Retro</div>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 movies-column text-center">
+        <div class="row movie-title">
+          <img class="img-movies" src="img/car_ff8.jpg" alt="Fast_and_Furious">
+        </div>
+        <div class="row movie-title">Fast & Furious 8</div>
+        <div class="row movie-title">Sala VIP</div>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 movies-column text-center">
+        <div class="row movie-title">
+          <img class="img-movies" src="img/car_av.jpg" alt="Avengers3">
+        </div>
+        <div class="row movie-title">Avengers - infinity War</div>
+        <div class="row movie-title">Sala Acción</div>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 movies-column text-center">
+        <div class="row movie-title">
+          <img class="img-movies" src="img/car_inferno.jpg" alt="Inferno">
+        </div>
+        <div class="row movie-title">Inferno</div>
+        <div class="row movie-title">Sala Este</div>
+      </div>
+      <div class="col-lg-2 col-md-2 movies-column right-column text-center">
+        <div class="row movie-title">
+          <img class="img-movies" src="img/dp2.jpg" alt="Dead_Pool2">
+        </div>
+        <div class="row movie-title">Dead Pool 2</div>
+        <div class="row movie-title">Sala Oeste</div>
+      </div>
+      <div class="col-lg-2 col-md-2 movies-column right-column text-center">
+        <div class="row movie-title">
+          <img class="img-movies" src="img/ht3.jpg" alt="Hotel_Transilvania3">
+        </div>
+        <div class="row movie-title">Hotel Transilvania 3</div>
+        <div class="row movie-title">Sala Comedia</div>
+      </div>
     </div>
 
     <!-- Punto 10 -->
     <div class="row">
-      <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 titulo-cartelera left-column"></div>
-      <div class="col-lg-4 col-md-4 titulo-cartelera right-column"></div>
+      <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 titulo-cartelera left-column">
+        <header class="titulo-text text-capitalize text-center">próximos estrenos
+        </header>
+      </div>
+      <div class="col-lg-4 col-md-4 titulo-cartelera right-column">
+        <header class="titulo-text text-capitalize text-center">mejor calificada          
+        </header>
+      </div>
     </div>
 
     <!-- Punto 11 -->

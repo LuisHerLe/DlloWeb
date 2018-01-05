@@ -19,14 +19,48 @@ Ayudas para Bootstrap
 	
 - 
 
-*****:::::----- Otras especificaciones  -----:::::*****
+*****:::::----- Clases  -----:::::*****
 
+::COLUMNAS::
 - Offset: Columnas sin contenido (A la IZQUIERDA) y permitir el ajuste de las columnas creadas para pantallas de tamaño inferior
 - Wrap: Cuando se excede el número de columnas en una fila se baja de fila buscando donde ponerse, no necesariamente a la izquierda
 - Push: Desplaza la columna hacia la derecha (Se come parte de la columna de la derecha)
 - Pull: Desplaza la columna hacia la Izquierda (Se come parte de la columna de la izquierda) 
+
+::CONTENEDORES::
 - affix-top: Para indicar que el contenedor va a quedar arriba (Debe ir con navbar-fixed-top)
 - affix-bottom: Para indicar que el contenedor va a quedar abajo (Debe ir con navbar-fixed-bottom)
 - navbar-fixed-top: Para indicar que la barra de navegación va a quedar visible siempre arriba sin importar el scroll
 - navbar-fixed-bottom: Para indicar que la barra de navegación va a quedar visible siempre abajo sin importar el scroll
+
+::ESPECIALES::
 - jumbotron: Se trata de un componente para mostrar contenidos de forma muy destacada. Si no lo encierras dentro de un elemento .container, ocupa toda la anchura del dispositivo. Si lo encierras dentro de un .container, solamente ocupará la anchura del contenedor y mostrará esquinas redondeadas
+
+::TEXTO Y LISTAS::
+- lead: Aumenta el tamaño del texto y el espaciado
+- text-center, text-left, text-right, text-justify, text-nowrap (En una sola linea): Clases para alinear los textos
+- text-lowercase, text-uppercase, text-capitalize: Para el manejo de las mayúsculas
+- list-unstyled: Quitar las viñetas a las listas (se pone en el ul)
+- list-inline: Poner la lista de forma horizontal (se pone en el ul)
+- dl-horizontal: Pone la definición al frente "nombre" (Listas)
+
+::MULTIMEDIA::
+- img-rounded: Redondea los bordes de las imágenes a 16px (Se puede utilizar en img, svg o figure)
+- img-circle: Redondea los bordes de las imágenes a 50% (Se puede utilizar en img, svg o figure)
+- img-thumbnail: Pone un marco al rededor de la imagen (Se puede utilizar en img, svg o figure)
+*****:::::----- Etiquetas  -----:::::*****
+::TEXTO Y LISTAS::
+- small: Poner notas junto a los <Hx> o <p>
+	* <h1>Título 1 <small>Nota 1 </small></h1>
+- abbr: Indicar que una parte del texto es una abreviatura
+	* El <abbr title="Señor">sr.</abbr> Pedro Perez
+- mark: Resalta el texto
+	* <mark>dolor</mark>
+- code: Resalta el código fuente
+	* <code>if (a>b)</code>
+- kbd: Resalta accesos directos
+	* <kbd>ctrl + v</kbd>	
+- dl, dt y dd Listas de definición: Es como un diccionario de datos, se usa dt para 
+	* <dl>
+		<dt>Framework CSS</dt>
+		<dd>Conjunto de librerías para facilitar el uso de los estilos CSS.</dd> 
