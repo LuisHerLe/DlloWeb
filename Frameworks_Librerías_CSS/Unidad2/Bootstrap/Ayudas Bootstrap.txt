@@ -1,6 +1,6 @@
 Ayudas para Bootstrap
 
-*****:::::----- Declaraciones y especificaciones -----:::::*****
+										*****:::::----- Declaraciones y especificaciones -----:::::*****
 
 - Los contenedores deben llevar la clase container
 	* .container: Las filas siempre se definen dentro de un contenedor de anchura fija
@@ -19,7 +19,7 @@ Ayudas para Bootstrap
 	
 - 
 
-*****:::::----- Clases  -----:::::*****
+										*****:::::----- Clases  -----:::::*****
 
 ::COLUMNAS::
 - Offset: Columnas sin contenido (A la IZQUIERDA) y permitir el ajuste de las columnas creadas para pantallas de tamaño inferior
@@ -48,7 +48,8 @@ Ayudas para Bootstrap
 - img-rounded: Redondea los bordes de las imágenes a 16px (Se puede utilizar en img, svg o figure)
 - img-circle: Redondea los bordes de las imágenes a 50% (Se puede utilizar en img, svg o figure)
 - img-thumbnail: Pone un marco al rededor de la imagen (Se puede utilizar en img, svg o figure)
-*****:::::----- Etiquetas  -----:::::*****
+
+										*****:::::----- Etiquetas  -----:::::*****
 ::TEXTO Y LISTAS::
 - small: Poner notas junto a los <Hx> o <p>
 	* <h1>Título 1 <small>Nota 1 </small></h1>
@@ -64,3 +65,47 @@ Ayudas para Bootstrap
 	* <dl>
 		<dt>Framework CSS</dt>
 		<dd>Conjunto de librerías para facilitar el uso de los estilos CSS.</dd> 
+
+										*****:::::----- Formularios Bootstrap -----:::::*****
+
+::ATRIBUTOS:: 
+- role: Valor("form"). Este atributo es para los usuarios con discapacidad visual (Hace más grande el formulario)
+- multiple: Selecciona múltiples opciones de una lista desplegable. Se utiliza en el input type select
+
+::Atributo CLASS:: 
+- form-group: Se crea en un contenedor (div) es para separar cada elemento del formulario (label e input).  Alinea de manera horizontal y ordenada los elementos html
+- form-control: permite expandir los elementos al 100% del contenedor y redondea los bordes 
+	* Para el textarea, esta clase, elimina el row y el col para agrandarlo al 100% del contenedor
+- btb btn-control: Se usa en el input type button y es para darle el estilo de Bootstrap al botón
+- checkbox: Muestra el grupo de checkbox pero uno debajo del otro
+	* <div class="form-group">
+        <div class="checkbox">
+          <label for="hobbie1"><input type="checkbox" name="hobbie1" id="hobbie1">Leer</label>
+        </div>
+        <div class="checkbox">
+          <label for="hobbie2"><input type="checkbox" name="hobbie2" id="hobbie2">Escribir</label>
+        </div>
+	</div>
+- checkbox: Muestra el grupo de checkbox pero uno debajo del otro
+	* <div class="form-group">
+        <div class="checkbox">
+          <label for="hobbie1"><input type="checkbox" name="hobbie1" id="hobbie1">Leer</label>
+        </div>
+        <div class="checkbox">
+          <label for="hobbie2"><input type="checkbox" name="hobbie2" id="hobbie2">Escribir</label>
+        </div>
+	</div>
+- radio: Posiciona los elementos de manera horizontal, asignando la clase a la etiqueta padre de un grupo de radio-button
+	* <div class="radio">
+          <label><input type="radio" name="sexo" value="sexo">Masculino</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="sexo" value="sexo">Femenino</label>
+      </div>
+- radio: Posiciona los elementos de manera horizontal, asignando la clase a la etiqueta padre de un grupo de radio-button.
+	* <div class="radio-inline">
+          <label><input type="radio" name="sexo" value="sexo">Masculino</label>
+        </div>
+        <div class="radio-inline">
+          <label><input type="radio" name="sexo" value="sexo">Femenino</label>
+      </div>

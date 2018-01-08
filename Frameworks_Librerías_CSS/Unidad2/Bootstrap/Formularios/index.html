@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Formularios</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+  <div class="container">
+    <form role="form">
+      <legend>Formulario de Contacto</legend>
+      <div class="form-group">
+        <label for="Nombre">Nombre</label>
+        <input type="text" name="nombre" id="Nombre">
+      </div>
+      <div class="form-group">
+        <label for="Telefono">Teléfono</label>
+        <input type="number" name="telefono" id="Telefono">
+      </div>
+      <div class="form-group">
+        <label for="Email">E-mail</label>
+        <input type="email" name="email" id="Email" class="form-control">
+      </div>
+      <div class="checkbox">
+          <label for="hobbie1">Leer</label>
+          <input type="checkbox" name="hobbie1" id="hobbie1">
+      </div>
+      <div class="checkbox">
+          <label for="hobbie2">Escribir</label>
+          <input type="checkbox" name="hobbie2" id="hobbie2">
+      </div>
+      <div class="checkbox">
+          <label for="hobbie3">Video Juegos</label>
+          <input type="checkbox" name="hobbie3" id="hobbie3">
+      </div>
+      <div class="checkbox">
+        <div class="radio">
+          <label><input type="radio" name="sexo" value="sexo">Masculino</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="sexo" value="sexo">Femenino</label>
+        </div>
+      </div>
+      <select multiple class="form-control" name="Lista">
+        <option value="">Primero</option>
+        <option value="">Segundo</option>
+        <option value="">Tercero</option>
+        <option value="">Cuarto</option>
+        <option value="">Quinto</option>
+      </optgroup>
+    </select>
+    <div class="form-group">
+      <label for="Comentario">Comentario</label>
+      <textarea name="comentario" rows="8" cols="40" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+      <input type="button" name="boton" value="Enviar" class="btn btn-default">
+    </div>
+  </form>
+</div>
+</body>
+</html>

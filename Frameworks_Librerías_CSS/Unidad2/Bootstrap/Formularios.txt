@@ -1,0 +1,53 @@
+url: caniuse.com (Revisar las compatibilidades de los navegadores)
+*****:::::----- Formularios  -----:::::*****
+------------- REPASO -------------
+- form: Crear formulario 
+  - Atributos:
+	* autocomplete: on y off. Autocompletar campos del formulario. El dato por default es on
+	* name: Darle el nombre al formulario
+	* rol: Valor: form. Es utilizado en bootstrap para usuarios con problemas visuales
+- fieldset: Envuelve todo el contenido del formulario
+- legend: Etiqueta de enunciado para dar el nombre al formulario (Visible)
+- Label: Etiqueta de enunciado tipo label 
+	* <label for="Nombre">Nombre</label>
+		- Atributo for: Con este se enlaza al input, tiene que ser el mismo id del input
+- Otras etiquetas de enunciados: <h1> al <h6>, <em>, <strong>, <b>, <p>	
+	
+- input: Etiqueta para datos de entrada, tiene diferentes type's
+	* color: Seleccionar paleta de colores.
+	* date: Fechas
+	* datetime: Fecha/Hora
+	* datetime-local: Fecha/Hora Local
+	* file: Subir diferentes tipos de archivos
+	* email: E-mail
+	* month: Mes
+	* number: Número
+	* Range: Rango de números
+	* search: Búsqueda
+	* tel: Teléfono
+	* time: Hora
+	* week: Semana
+	* url: Dirección URL
+	* reset: Reestablecer
+	* button: Botón HTML
+	* submit: Botón para conexión con bases de datos y servidores
+	* Select: Lista desplegable
+		<select>
+			<option>Valor 1</option>
+		<select>
+	* textarea: Área de texto que tiene más tamaño que el text, maneja cols (columnas) y rows (filas)
+		<textarea> name="Observaciones" rows="8" cols="40"</textarea>
+	
+	Para cada una de estos types se manejan varias etiquetas:
+	- name: Valor: String - Nombre del campo
+	- id: Valor: String - Identificación única en el DOM
+	- disable: Valor: true o false - Deshabilitar campos y evitar que se ingresen datos
+	- readonly: Valor: true o false - No se puede habilitar, se usa para mostrar cuadros de entrada de lectura
+	- maxlength: Valor: Número (ej: 5) - Indica al navegador cantidad máxima de caracteres que permite ingresar
+	- max: Valor: Número (ej: 100) - Se utiliza con el type number, se especifica el número máximo que se puede ingresar
+	- min: Valor: Número (ej: 2) - Se utiliza con el type number, se especifica el número mínimo que se puede ingresar
+	- value: Valor: String - Se utiliza para asignar un valor por defecto al elemento input
+	- step: Valor: Número (Ejemplo: 5) - Se utiliza con el type number, se utiliza para indicar el número de unidades  para hacer el incremento o decremento
+	- placeholder: Valor: String - Se utiliza como ayuda para indicar al usuario que debe ingresar
+	
+<button type="button" name="button" class="btn btn-primary form-control">Guardar</button>

@@ -155,7 +155,42 @@
           <dd class="services-text">Crispetas y más crispetas, en Imperial Cinema contamos con zonas de comida por cada sala!, así no tendrás que correr mientras buscas que comer. Buen provecho!.</dd>
         </dl>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 movies-row"></div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 movies-row">
+        <form role="form">
+          <fieldset>
+            <div class="form-group text-center">
+              <legend class="user_data">Datos Personales</legend>
+              <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo" class="form-control input-element">
+              <input type="email" name="email" id="email" placeholder="Correo Electrónico" class="form-control input-element">
+              <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" class="form-control input-element">
+              <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad" class="form-control input-element">
+            </div>
+            <div class="form-group text-center">
+              <legend class="user_data">Elige tus categorías favoritas</legend>
+              <input type="checkbox" name="comedia" id="comedia">
+              <label for="comedia" class="label-class">Comedia</label>
+              <input type="checkbox" name="accion" id="accion">
+              <label for="accion" class="label-class">Acción</label>
+              <input type="checkbox" name="terror" id="terror">
+              <label for="terror" class="label-class">Terror</label>
+              <input type="checkbox" name="sc-fi" id="sc-fi">
+              <label for="sc-fi" class="label-class">SCI FI</label>
+              <input type="checkbox" name="drama" id="drama">
+              <label for="drama" class="label-class">Drama</label>
+            </div>
+            <div class="text-center">
+              <legend class="user_data">¿Desea recibir correo de nuestro sitio?</legend>
+              <input type="radio" name="recibirCorreo" id="si">
+              <label class="label-class" for="si">Si</label>
+              <input type="radio" name="recibirCorreo" id="no">
+              <label class="label-class" for="no">No</label>
+            </div>
+            <div class="text-center">
+              <button type="button" name="button" class="btn btn-primary form-control btn-save">Guardar</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
     </div>
   </div>
 </nav>
