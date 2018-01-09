@@ -1,0 +1,25 @@
+Ayudas para Foundation (Versión actual 6) (https://foundation.zurb.com/)
+
+										*****:::::----- Declaraciones y especificaciones -----:::::*****
+::CLASES::
+- row: Clase para indicar ua fila (Se crea dentro de los divs)
+- grid-x: Clase para indicar ua fila (Se crea dentro de los divs), se usa o row o grid-x
+- Para crear columnas se indica con las clases column o columns (No hay diferencia), si no se especifica el número de columnas, Foundation lo toma automáticamente del tamaño restante del contenedor
+	* column small-x o columns small-x (SmartPhone)
+	* column medium-x o columns medium-x (Tablets)
+	* column large-x o columns large-x (PC)
+- expanded: Clase utlizada junto co row para expandir una columna a la totalidad del ancho de la página 
+- offset: Permite desplazar a la derecha los bloques, se debe ingresar con los prefijos adaptativos
+	* large-ofset-3
+- callout: Contenedor para columnas
+- primary: Contenedor para columnas
+- shrink: La columna se dará egún el contenido que posea
+- expand: Indica a la columna que adopte el tamaño disponible del contenedor (Cambios de restructuración entre dispositivos)
+- stack: Apilar una fila debajo de otra todas las columnas en su interior 
+- unstack: No apilar una fila debajo de otra todas las columnas en su interior
+- align-right, align-center, align-justify, align-space, alineación horizontales de columnar
+- align-top, align-middle, align-bottom, alineación vertical de las columnas 
+	* align-xxxx
+	* align-self-xxxx para indicar a la columna propia donde debe alinearse
+- order: Para ordenar los componentes de la página	
+	* small-order-#
