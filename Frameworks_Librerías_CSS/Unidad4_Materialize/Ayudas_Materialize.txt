@@ -15,7 +15,18 @@
 *****-----****** AYUDAS *****-----******
 - Paleta de colores
 	http://materializecss.com/color.html
+- Abreviaturas:
+	(s= small: SmartPhone, m= medium: Tablets, l= large: PC's)
 	
 *****-----****** CLASES *****-----******
 - card-panel: Contenedor de Materialize
 - @color-text: Color del Texto
+- row: Fila
+- col: Columna, se utiliza con el número de columnas
+	* col s12
+- offset-#: Desplazamiento hacia la derecha de un contenedor
+	* offset-s6 
+- push-pn empuja el contenedor "n" columnas hacia la derecha del dispositivo "p" (Los que están a la derecha NO se desplazan)
+	* push-m6
+- pull-pn empuja el contenedor "n" columnas hacia la izquierda del dispositivo "p" (Los que están a la izquierda NO se desplazan)
+	* push-m6
