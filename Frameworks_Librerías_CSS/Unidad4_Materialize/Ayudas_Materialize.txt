@@ -1,0 +1,21 @@
+*****-----****** INICIALIZACIONES *****-----******
+::Head:: 
+- Se crea el viweport estandar
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+- Se asocia el estilo de íconos	
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+- Se asocia el CSS local
+    <link rel="stylesheet" href="../util/css/materialize.min.css" type="text/css" media="screen, proyection">
+
+::BODY::
+- Se asocian los java script locales
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../util/js/materialize.min.js"></script>
+
+*****-----****** AYUDAS *****-----******
+- Paleta de colores
+	http://materializecss.com/color.html
+	
+*****-----****** CLASES *****-----******
+- card-panel: Contenedor de Materialize
+- @color-text: Color del Texto
