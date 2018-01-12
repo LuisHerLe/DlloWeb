@@ -2,14 +2,11 @@
   height: 4rem;
 }
 
-/* section-group: Columna para los grupos */
-.section-group{
+div[class*="section"]{
   height: 50rem;
   border: 1px #0B6138 solid;
 }
 
-/* section-central: Columna Central */
-.section-central{
-  height: 50rem;
-  border: 1px #071918 solid;
+.chat-row{
+  height: 25rem;
 }

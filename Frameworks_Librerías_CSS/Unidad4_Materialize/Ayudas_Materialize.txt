@@ -30,3 +30,5 @@
 	* push-m6
 - pull-pn empuja el contenedor "n" columnas hacia la izquierda del dispositivo "p" (Los que están a la izquierda NO se desplazan)
 	* push-m6
+- hide-on-med-and-down: Esconder para tablets y SmartPhone's
+- hide-on-small-only: Esconder solo para SmartPhone's
