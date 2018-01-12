@@ -4,9 +4,33 @@
 
 div[class*="section"]{
   height: 50rem;
-  border: 1px #0B6138 solid;
 }
 
 .chat-row{
   height: 25rem;
+  padding: 0px !important;
+}
+
+.new-publish{
+  height: 7rem;
+}
+
+.old-publish{
+  min-height: 17rem;
+  padding: 2rem;
+}
+
+.logo{
+  width: 78px;
+  margin-top: 0.5rem;
+}
+.div-news{
+  min-height: 0.5rem;
+  margin-top: 1rem;
+}
+
+.responsive-img{
+  border: 0.6rem solid #e0f2f1;
+  border-radius: 5px;
+  max-height: 180px;
 }
