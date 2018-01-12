@@ -19,7 +19,9 @@
 	(s= small: SmartPhone, m= medium: Tablets, l= large: PC's)
 	
 *****-----****** CLASES *****-----******
-- card-panel: Contenedor de Materialize
+- card-panel: Contenedor con sombra de Materialize
+- card: Contenedor con sombra
+- hoverable: Aimación de sombra cuando se pasa el mouse sobre el componente con card
 - @color-text: Color del Texto
 - row: Fila
 - col: Columna, se utiliza con el número de columnas
@@ -30,5 +32,39 @@
 	* push-m6
 - pull-pn empuja el contenedor "n" columnas hacia la izquierda del dispositivo "p" (Los que están a la izquierda NO se desplazan)
 	* push-m6
-- hide-on-med-and-down: Esconder para tablets y SmartPhone's
-- hide-on-small-only: Esconder solo para SmartPhone's
+-z-depth-n: Para darle profundidad a los objetos, donde n va de 1 a 5 (Menor a mayor profundidad)
+
+:: ALINEACIÓN::
+- valign-wrapper: Alinear elementos verticalmente (Al contenedor)
+- valign: Alinear elementos verticalmente (Etiqueta de escritura y puede ser opcional)
+	* <div class="valign-wrapper">
+		<h5 class="valign">Este texto está cetrado verticalmente</h5>
+	  </div>
+- left-align: Alinear a la izquierda (Al contenedor del texto)
+- right-align: Alinear a la derecha (Al contenedor del texto)
+- center-align: Alinear al centro (Al contenedor del texto)
+
+::OCULTAR::
+- hide: Se oculta en todos los dispositivos
+- hide-on-small-only: Se oculta sólo para SmartPhone's
+- hide-on-med-only: Se oculta sólo en tabletas
+- hide-on-med-and-down: Se oculta en tablets y SmartPhone's
+- hide-on-med-and-up: Se oculta en tabletas y pantallas grandes
+- hide-on-large-only: Se oculta sólo en pantalla de PC's
+
+::TEXTO::
+- truncate: Ocultar parte del texto cuando es muy largo según tamaño de pantalla
+- flow-text:  Adaptar el tamaño de la letra según el tamaño de la pantalla
+- blockquote: Bloque de citas textuales
+
+::TABLAS::
+- bordered: División entre las filas (clase table)
+- striped: Cada fila impar tenga un color de fondo (Clase table)
+- highlight: Resaltar la fila por la que se pasa el cursor
+- responsive-table: tabla adaptativa (Genra barra de desplazamiento)
+
+::MULTIMEDIA::
+- responsive-img: Imagen responsive (Se crea en la clase img)
+- circle: Para dar el efecto de círculo a la imagen (Se crea en la clase img)
+- responsive-video: Video responsive 
+- video-container: Contenedor de video
