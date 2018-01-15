@@ -17,11 +17,29 @@
 	http://materializecss.com/color.html
 - Abreviaturas:
 	(s= small: SmartPhone, m= medium: Tablets, l= large: PC's)
+- íconos:
+	http://materializecss.com/icons.html
 	
 *****-----****** CLASES *****-----******
 - card-panel: Contenedor con sombra de Materialize
-- card: Contenedor con sombra
+- card: Rectángulo con sombra que puede tener texto, imágenes o enlaces
+- card-content: Contenedor de contenido (Se crea después de card)
+- activator: Para indicar que al hacer click e la imagen, se va a desplegar el contenido oculto de en el contenedor card-reveal
+- card-reveal: Para ocultar contenido que se podrá mostrar al ponerle la clase activator al contenedor anterior
+- card-title: Definir un título al componente card (Se hace dentro del card-content)
+- material-icons: Le da la forma de ícono a las funciones generales del contenedor (Utilizar con card-title)
+- card-action: Contenedor de enlaces (Se hace dentro del card-content)
+- card-image: Incluir imágenes al componente
 - hoverable: Aimación de sombra cuando se pasa el mouse sobre el componente con card
+- chip: Mostrar contenido con muy poca información como etiquets o contactos (Adicionar chip a un contenedor, se puede ingresar: texto, image o íconos), ejemplo mostrar imagen con el nombre de usuario
+- collection: Lista propia de HTML
+- collection-item: Elemento agrupado de la lista (Se debe hacer dentro del contenedor con clase collection-item)
+- with-header: Indicar en el contenedor con clase collection que va a tener un título de la lista
+- collection-header: Clase indicada en el elemento de texto (h) que es el título
+- new-wrapper: Clase dentro del contenedor nav para crear una barra de navegación ()
+- brand-logo: logo dentro de una barra de navegación
+- active: Para indicar en que sección se encuentra (Se crea en la clase de las listas)
+- navbar-fixed: Fijar la barra de navegación siempre (Se debe crear en un contenedor al principio)
 - @color-text: Color del Texto
 - row: Fila
 - col: Columna, se utiliza con el número de columnas
@@ -68,3 +86,28 @@
 - circle: Para dar el efecto de círculo a la imagen (Se crea en la clase img)
 - responsive-video: Video responsive 
 - video-container: Contenedor de video
+- waves-effect: Efecto ola en imagen que cuando se toca, sale un destello blanco desde el cursor
+- waves-block: 
+- waves-color: Color del efecto de la ola
+	* waves-light
+- waves-circle: Efecto de círculo (Se crea para botones notmalmente)
+
+::BOTONES:: (Se le pueden aplicar los efectos waves)
+- btn: clase para potones (hacerlo en una etiqueta a)
+- btn-#tamaño: Tamaño de botón (small, tiny, large, medium)
+	- btn-large
+- btn-floating: Botón flotante, ideal para íconos
+- fixed-action: Para que active cuando se pase el mouse sobre este
+- click-to-toggle: Para hacer que se tenga que dar click para desplegar las opciones
+- horizontal: Dirección a la que se va a desplegar las opciones del botón 
+
+::PAGINACIÓN::
+- pagination: Facilita la navegación con varias páginas de contenido (dentro de la etiqueta ul)
+- disabled: Deshabilitar commponente
+- enabled: Activar componente
+
+::FORMULARIOS::
+- input-field: Se crea como contenedor de cada uno de los elemntos de entrada
+	  <label for="email" data-success="Correcto" data-error="Debes completar ete campo">E-mail</label>
+- browser-default: Para crear select (Los select no pueden ir dentro de un input-filed)
+	* Los select no deben ir dentro de un input-field

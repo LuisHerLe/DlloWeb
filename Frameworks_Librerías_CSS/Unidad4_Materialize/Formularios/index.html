@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Botones de Materialize CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../util/css/materialize.min.css" type="text/css" media="screen, proyection">
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h1>Formulario de Materialize</h1>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <form>
+        <div class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">perm_identity</i>
+              <input id="nombre" type="text" class="validate">
+              <label for="nombre">Nombre de Usuario</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">vpn_key</i>
+              <input id="nombre" type="text" class="validate">
+              <label for="contrasena">COntraseña</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="email" class="validate">
+              <label for="email" data-success="Correcto" data-error="Debes completar ete campo">E-mail</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <textarea id="texto" rows="8" cols="80" class="materialize-textarea"></textarea>
+              <label for="texto">Texto</label>
+            </div>
+            <div class="col s6">
+              <p>
+                <input type="radio" name="sexo" id="masculino" value="Masculino">
+                <label for="masculino">Masculino</label>
+                <p>
+                  <input type="radio" name="sexo" id="femenino" value="Femenino">
+                  <label for="femenino">Femenino</label>
+                </p>
+              </div>
+
+
+              <select class="browser-default">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+              <label>Browser Select</label>
+
+
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Scripts de Materialize -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../util/js/materialize.min.js"></script>
+  </body>
+  </html>
