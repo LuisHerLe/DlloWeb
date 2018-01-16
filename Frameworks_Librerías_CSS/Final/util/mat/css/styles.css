@@ -1,0 +1,16 @@
+h5{
+  width: 100%;
+}
+
+#contenedor_vertical{
+  height: 500px;
+}
+
+.cuadrado{
+  width: 100px;
+  height: 100px;
+  background-color: #03a9f4;
+  text-align: center;
+  margin: 10px;
+  display: inline-block;
+}
