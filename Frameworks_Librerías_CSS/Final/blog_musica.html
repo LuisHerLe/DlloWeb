@@ -1,14 +1,48 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Bootstrap Offline</title>
-    <!-- NOTE: Versión Bootstrap v3.3.7 -->
-    <link rel="stylesheet" href="util/boo/css/bootstrap.min.css">
-  </head>
-  <body>
-    <header class="container" style="background-color: gray">
-      <h1>Este es el título</h1>
-    </header>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimun-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+  <title>Blog de Música</title>
+  <!-- NOTE: Versión Bootstrap v3.3.7 -->
+  <link rel="stylesheet" href="util/boo/css/bootstrap.min.css">
+  <link rel="stylesheet" href="util/boo/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <!-- NOTE: Creación del Header que no abarca el 100% de la pantalla-->
+  <header class="container color-content">
+    <img class="logo-img" src="util/boo/img/logo.png" alt="Logo" title="Logo">
+    <div class="row">
+      <div class="col-xs-12 col-sm-3 col-sm-push-9 col-md-3 col-md-push-9" style="border:1px solid black;">
+        <a href="#"><i class="fa fa-youtube-play" style="font-size:36px"></i></a>
+        <a href="#"><i class="fa fa-instagram" style="font-size:36px"></i></a>
+        <a href="#"><i class="fa fa-pinterest" style="font-size:36px"></i></a>
+        <a href="#"><i class="fa fa-twitter" style="font-size:36px"></i></a>
+      </div>
+    </div>
+  </header>
+  <!-- Creación de barra de navegación -->
+  <div class="row">
+    <div class="container color-content no-padding">
+        <div class="col-ms-12 col-lg-12 no-padding">
+          <nav>
+            <ul class="list-inline col-ms-12 col-lg-12 no-padding">
+              <li class="border nav-style text-center"><a href="#inicio">Inicio</a></li>
+              <li class="border nav-style text-center"><a href="#artistas">Artistas</a></li>
+              <li class="border nav-style text-center"><a href="#Grupos">Grupos</a></li>
+              <li class="border nav-style text-center"><a href="#top10">Top 10</a></li>
+              <li class="border nav-style text-center"><a href="#letras">Letras</a></li>
+              <li class="border nav-style text-center"><a href="#acordes">Acordes</a></li>
+            </ul>
+          </nav>
+        </div>
+
+    </div>
+  </div>
+
+
+
+</body>
 </html>

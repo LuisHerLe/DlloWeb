@@ -1,0 +1,50 @@
+/* NOTE: Hoja de estilos personalizados */
+body{
+  background-color: rgba(21, 0, 0, 0.5);
+}
+
+/* NOTE: Color para los contenedores */
+.color-content{
+  background-color: rgb(255, 255, 255);
+}
+
+/* Estilos para el header */
+header{
+  min-height: 200px;
+}
+
+header>nav>img{
+  width: 20%;
+  margin-top: 30px;
+}
+
+/* Estilo para los íconos de las redes sociales */
+.social-icon{
+  font-size:48px;
+  color: rgba(255, 244, 21, 1);
+}
+
+/* Estilos para el nav */
+.border{
+  border: 1px solid black;
+}
+.no-padding{
+  padding: 0px;
+}
+
+.nav-style{
+  width: 15%;
+  margin-left: 15px;
+  background: rgba(0, 0, 59, 0.3);
+}
+.text-center{
+  text-align: center;
+}
+
+/* Personalización de media queries}*/
+@media all and (min-width=760) {
+  .item-width{
+    width: 100%;
+    margin-left: 15px;
+  }
+}
