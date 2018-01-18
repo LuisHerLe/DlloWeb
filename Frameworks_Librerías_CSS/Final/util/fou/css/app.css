@@ -1,4 +1,72 @@
-div{
-  border: 1px solid black;
+/* NOTE: Estilos personalizados */
+body{
+  background-image: url("../../img/food_back.jpg");
+  background-size:cover;
+  background-attachment: fixed;
+}
+.border-right{
+  border-right: 0.5px solid #F5EEEC;
+}
+.border{
+  border: 0.5px solid #F5EEEC;
   padding: 2px;
 }
+/* :::::::::::::Colores<open>::::::::::::: */
+/* NOTE: Color primario para contenedor principal  */
+.primaryColor{
+  background-color: rgba(222, 140, 120, 0.8);
+}
+.secondaryColor{
+  background-color: rgba(247,221,213,0.7);
+}
+.tertiaryColor{
+  background-color: rgba(232, 38, 22, 0.8);
+}
+.font1rstColor{
+  color: rgba(255, 255, 255, 0.8);
+}
+/* :::::::::::::Colores<close>::::::::::::: */
+
+/* :::::::::::::Estilos generales<open>::::::::::::: */
+*,p,h3,h5{
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+h5{
+  text-align: right;
+}
+
+/* :::::::::::::Estilos generales<close>::::::::::::: */
+
+/* :::::::::::::Estilos contenedores<open>::::::::::::: */
+.grid-container>.row{
+  height: 200px;
+}
+#cont_busqueda{
+  border-radius: 3px;
+}
+
+input[type=text] {
+    width: 70%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.7s ease-in-out;
+    transition: width 0.7s ease-in-out;
+}
+input[type=text]:focus {
+    width: 100%;
+    clear: both;
+/* :::::::::::::Estilos contenedores<close>::::::::::::: */
+
+/* :::::::::::::Media Queries<open>::::::::::::: */
+/*  Plantilla
+@media all and (min-width: XXXpx) {
+
+}
+} */
+/* :::::::::::::Media Queries<close>::::::::::::: */

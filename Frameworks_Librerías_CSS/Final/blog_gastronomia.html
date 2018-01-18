@@ -1,19 +1,57 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Ejercicios de offset</title>
-    <!-- NOTE: Versión Foundation 6.4.2 -->
-    <link rel="stylesheet" href="util/fou/css/foundation.min.css">
-    <link rel="stylesheet" href="util/fou/css/app.css">
-  </head>
-  <body>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- NOTE: Versión Foundation 6.4.2 -->
+  <link rel="stylesheet" href="util/fou/css/foundation.min.css">
+  <link rel="stylesheet" href="util/fou/css/app.css">
+  <!-- NOTE: Fuente de google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+  <title>Blog de Gastronomía</title>
+</head>
+<!-- Se agrega fondo de pantalla fijo -->
+<body>
+  <!-- Se crea contenedor principal -->
+  <div class="grid-container">
+    <!-- NOTE: Se crea fila superior -->
+    <div class="row primaryColor">
+      <!-- Contenido de la izquierda -->
+      <div class="small-4 small-expand columns border-right small-stack">
+        <h3 class="font1rstColor">El Casero</h3>
+        <br>
+        <h5 class="font1rstColor">Porque la comida casera es la mejor!</h5>
+      </div>
+      <!-- Contenido de la derecha -->
+      <div class="small-8 small-expand columns small-stack">
+        <!-- NOTE: Columna vacía -->
+      </div>
+    </div>
+<!-- NOTE: Se crea nueva fila para el contenido principal -->
+    <div class="row primaryColor small-stack">
+      <!-- NOTE: Contenido de búsqueda -->
+      <div class="small-11 medium-expand columns">
+          <div class="columns small-4 medium-expand secondaryColor" id="cont_busqueda">
+            <form name="formSearch small-extend">
+              <input type="text" name="search" value="Buscar...">
+            </form>
+          </div>
+      </div>
 
-
-<!-- NOTE: Scripts bases de Foundation -->
-    <script src="util/fou/js/vendor/jquery.js"></script>
-    <script src="util/fou/js/vendor/what-input.js"></script>
-    <script src="util/fou/js/vendor/foundation.js"></script>
-    <script src="util/fou/js/app.js"></script>
-  </body>
+    </div>
+  </div>
+  <div class="row medium-uncollapse large-collapse">
+      <div class="small-6 columns">
+          Removes gutter at large media query
+      </div>
+      <div class="small-6 columns">
+          Removes gutter at large media query
+      </div>
+  </div>
+  <!-- NOTE: Scripts bases de Foundation -->
+  <script src="util/fou/js/vendor/jquery.js"></script>
+  <script src="util/fou/js/vendor/what-input.js"></script>
+  <script src="util/fou/js/vendor/foundation.js"></script>
+  <script src="util/fou/js/app.js"></script>
+</body>
 </html>
