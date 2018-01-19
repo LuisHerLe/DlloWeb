@@ -1,16 +1,5 @@
 /* NOTE: Estilos personalizados */
-body{
-  background-image: url("../../img/food_back.jpg");
-  background-size:cover;
-  background-attachment: fixed;
-}
-.border-right{
-  border-right: 0.5px solid #F5EEEC;
-}
-.border{
-  border: 0.5px solid #F5EEEC;
-  padding: 2px;
-}
+
 /* :::::::::::::Colores<open>::::::::::::: */
 /* NOTE: Color primario para contenedor principal  */
 .primaryColor{
@@ -31,36 +20,35 @@ body{
 *,p,h3,h5{
   font-family: 'Alegreya Sans', sans-serif;
 }
-
+body{
+  background-image: url("../../img/food_back.jpg");
+  background-size:cover;
+  background-attachment: fixed;
+}
+.border-right{
+  border-right: 0.5px solid #F5EEEC;
+}
+.border{
+  border: 0.5px solid #F5EEEC;
+  padding: 2px;
+}
 h5{
   text-align: right;
 }
-
+#ContenidoBusqueda{
+  border-radius: 3px;
+  margin: 5px;
+  padding: 10px;
+}
 /* :::::::::::::Estilos generales<close>::::::::::::: */
 
 /* :::::::::::::Estilos contenedores<open>::::::::::::: */
 .grid-container>.row{
-  height: 200px;
-}
-#cont_busqueda{
-  border-radius: 3px;
+  height: 180px;
 }
 
-input[type=text] {
-    width: 70%;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.7s ease-in-out;
-    transition: width 0.7s ease-in-out;
-}
-input[type=text]:focus {
-    width: 100%;
-    clear: both;
+
+
 /* :::::::::::::Estilos contenedores<close>::::::::::::: */
 
 /* :::::::::::::Media Queries<open>::::::::::::: */

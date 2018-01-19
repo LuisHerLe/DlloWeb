@@ -12,42 +12,43 @@
 </head>
 <!-- Se agrega fondo de pantalla fijo -->
 <body>
-  <!-- Se crea contenedor principal -->
-  <div class="grid-container">
+  <div class="grid-container ">
+    <!-- Se crea contenedor principal -->
+
+
     <!-- NOTE: Se crea fila superior -->
     <div class="row primaryColor">
       <!-- Contenido de la izquierda -->
-      <div class="small-4 small-expand columns border-right small-stack">
+      <div class="small-12 medium-4 large-4 columns border-right small-stack">
         <h3 class="font1rstColor">El Casero</h3>
         <br>
         <h5 class="font1rstColor">Porque la comida casera es la mejor!</h5>
       </div>
       <!-- Contenido de la derecha -->
-      <div class="small-8 small-expand columns small-stack">
+      <div class="small-12 medium-8 large-8 columns small-stack">
         <!-- NOTE: Columna vacía -->
       </div>
     </div>
-<!-- NOTE: Se crea nueva fila para el contenido principal -->
-    <div class="row primaryColor small-stack">
-      <!-- NOTE: Contenido de búsqueda -->
-      <div class="small-11 medium-expand columns">
-          <div class="columns small-4 medium-expand secondaryColor" id="cont_busqueda">
-            <form name="formSearch small-extend">
-              <input type="text" name="search" value="Buscar...">
-            </form>
-          </div>
-      </div>
 
+    <!-- Se crea el contenido principal -->
+    <div class="row primaryColor">
+      <div class="grid-x large-11" >
+        <div class="small-12 medium-4 large-4 columns secondaryColor" id="ContenidoBusqueda">
+          <form class="large-extend">
+            <input class="search-bar" placeholder="Buscar..." type="text">
+            <div class="button-wrap">
+              <button name="button" type="submit">
+                <i class="icon-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
+
+
   </div>
-  <div class="row medium-uncollapse large-collapse">
-      <div class="small-6 columns">
-          Removes gutter at large media query
-      </div>
-      <div class="small-6 columns">
-          Removes gutter at large media query
-      </div>
-  </div>
+
   <!-- NOTE: Scripts bases de Foundation -->
   <script src="util/fou/js/vendor/jquery.js"></script>
   <script src="util/fou/js/vendor/what-input.js"></script>
