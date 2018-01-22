@@ -1,22 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="es"  Copyright (c) 2018 Copyright Holder All Rights Reserved. By Luis Hernández>
   <head>
     <meta charset="utf-8">
-    <title>Primeros pasos en Materialize CSS</title>
+    <title>Blog de Turismo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="util/mat/css/materialize.min.css" type="text/css" media="screen, proyection">
   </head>
   <body>
-    <div class="valign-wrapper " id="contenedor_vertical">
-      <h5 class="valign center-align hide-on-small-only">Este texto está cetrado verticalmente</h5>
-    </div>
 
-
+<div class="card-content">
+<div class="navbar">
+  <nav class="nav-wrapper green darken-1">
+    <a class="brand-logo left" href="#"> <img class="responsive-img circle" src="util/img/turism_logo.png"></a>
+    <ul class="right">
+      <li class="active"><a href="index.html"><i class="material-icons Small left">home</i><span class="hide-on-med-and-down">Inicio</span></a></li>
+      <li><a href="#find"><i class="material-icons Small left">flight</i><span class="hide-on-med-and-down">Buscar Destinos</span></a></li>
+      <li><a href="#CheckIn"><i class="material-icons Small left">flight_takeoff</i><span class="hide-on-med-and-down">Check-In</span></a></li>
+      <li><a href="#FlyHistory"><i class="material-icons Small left">folder_special</i><span class="hide-on-med-and-down">Historial de Vuelos</span></a></li>
+      <li><a href="#LogIn"><i class="material-icons Small left">account_circle</i><span class="hide-on-med-and-down">Iniciar Sesión</span></a></li>
+    </ul>
+  </nav>
+</div>
+<div class="row">
+  <div class="col s10 m10 l10 offset-l2  valign-wrapper flow-text">
+  		<h5 class="valign">Este texto está cetrado verticalmente</h5>
+  	  </div>
+  </div>
+</div>
 
 <!-- NOTE: Scripts bases de Materialize -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="util/mat/js/materialize.min.js"></script>
-
   </body>
 </html>

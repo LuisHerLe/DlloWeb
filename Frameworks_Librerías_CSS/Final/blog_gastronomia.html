@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"  Copyright (c) 2018 Copyright Holder All Rights Reserved. By Luis Hernández>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,51 +8,124 @@
   <link rel="stylesheet" href="util/fou/css/app.css">
   <!-- NOTE: Fuente de google Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+  <!-- NOTE: Íconos Foundation -->
+  <link rel="stylesheet" href="util/fou/foundation-icons/foundation-icons.css">
   <title>Blog de Gastronomía</title>
 </head>
-<!-- Se agrega fondo de pantalla fijo -->
 <body>
-  <div class="grid-container ">
-    <!-- Se crea contenedor principal -->
-
-
-    <!-- NOTE: Se crea fila superior -->
-    <div class="row primaryColor">
-      <!-- Contenido de la izquierda -->
-      <div class="small-12 medium-4 large-4 columns border-right small-stack">
-        <h3 class="font1rstColor">El Casero</h3>
-        <br>
-        <h5 class="font1rstColor">Porque la comida casera es la mejor!</h5>
-      </div>
-      <!-- Contenido de la derecha -->
-      <div class="small-12 medium-8 large-8 columns small-stack">
-        <!-- NOTE: Columna vacía -->
-      </div>
+  <!-- NOTE: Se crea fila superior -->
+  <div class="row primaryColor">
+    <!-- Contenido de la izquierda -->
+    <div class="small-12 medium-3 large-4 columns border-right small-stack">
+      <h3 class="font1rstColor">El Casero</h3>
+      <br>
+      <h5 class="font1rstColor">Porque la comida casera es la mejor!</h5>
     </div>
-
-    <!-- Se crea el contenido principal -->
-    <div class="row primaryColor">
-      <div class="grid-x large-11" >
-        <div class="small-12 medium-4 large-4 columns secondaryColor" id="ContenidoBusqueda">
-          <form class="large-extend">
-            <input class="search-bar" placeholder="Buscar..." type="text">
-            <div class="button-wrap">
-              <button name="button" type="submit">
-                <i class="icon-search"></i>
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
+    <!-- Contenido de la derecha -->
+    <div class="small-12 medium-8 large-8 columns small-stack  hide-for-small-only">
+      <!-- NOTE: Columna vacía -->
     </div>
-
-
   </div>
 
-  <!-- NOTE: Scripts bases de Foundation -->
-  <script src="util/fou/js/vendor/jquery.js"></script>
-  <script src="util/fou/js/vendor/what-input.js"></script>
-  <script src="util/fou/js/vendor/foundation.js"></script>
-  <script src="util/fou/js/app.js"></script>
-</body>
-</html>
+  <!-- Se crea el contenido principal -->
+  <div class="row primaryColor ">
+
+    <!-- NOTE: Contenido de la izquierda -->
+    <div class="small-12 medium-3 large-4 columns secondaryColor" id="ContenidoBusqueda">
+
+      <!-- NOTE: Barra de búsqueda -->
+      <form class="large-extend">
+        <div class="input-group">
+          <input class="input-group-field" type="text" placeholder="Buscar...">  <span class="input-group-label tertiaryColor navBar"><a href="#buscar">
+            <i class="step fi-page-search size-60"></i>
+          </span></a>
+        </div>
+      </form>
+
+      <!-- NOTE: Barra de navegación -->
+      <ul class="menu vertical align-center">
+        <a href="#Inicio" class="navBar"><li>Inicio</li></a>
+        <a href="#RecetaDia" class="navBar"><li>Receta del día</li></a>
+        <a href="#RecetaCasera" class="navBar"><li>Recetas caseras </li></a>
+      </ul>
+      <br>
+
+      <!-- NOTE: Vistos últimamente con Tooltip en las imágenes-->
+      <div class="columns small-12 medium-12 large-12 columns">
+        <h4 class="font1rstColor">Vistos recientemente</h4>
+        <div class="row">
+          <div class="columns small-4 medium-4 large-4 columns"><span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Guacamole"><img src="util/img/food_guacamole.jpg" alt="Guacamole"></span>
+          </div>
+          <div class="columns small-4 medium-4 large-4 columns"><span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Frijoles Antioqueños"><img src="util/img/food_frijoles.jpg" alt="Frijoles"></span>
+          </div>
+          <div class="columns small-4 medium-4 large-4 columns"><span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Pizza"><img src="util/img/food_pizza.jpg" alt="Pizza"></span>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="columns small-4 medium-4 large-4 columns"><span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Cañón en Salsa"><img src="util/img/food_canon.jpg" alt="Cañon"></span>
+          </div>
+          <div class="columns small-4 medium-4 large-4 columns"><span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Pasta en Salsa Fileto"><img src="util/img/food_pasta_fileto.jpg" alt="pasta_fileto"></span>
+          </div>
+          <div class="columns small-4 medium-4 large-4 columns"><span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Hamburguesa"><img src="util/img/food_hamburguesa.jpg" alt="Hamburguesa"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- NOTE: Espacio -->
+      <br>
+
+      <!-- NOTE: Historial -->
+      <ul class="nested vertical menu">
+        <h4 class="font1rstColor">Historial</h4>
+        <li><a href="#"><span class="font2ndColor">Guacamole Picante</span></a></li>
+        <li><a href="#"><span class="font2ndColor">Como emplatar</span></a></li>
+        <li><a href="#"><span class="font2ndColor">Como hacer pizza sin Horno</span></a></li>
+        <li><a href="#"><span class="font2ndColor">Postres</span></a></li>
+      </ul>
+    </div>
+
+    <!-- NOTE: Contenido de la Derecha -->
+    <!-- NOTE: Primera Entrada -->
+    <div class="small-12 medium-8 large-7 columns tertiaryColor" id="ContenidoBusqueda">
+      <h2 class="font1rstColor">Guacamole Casero</h2>
+      <h6 class="font1rstColor">22 de Enero de 2018</h6>
+      <img src="util/img/food_guacamole.jpg" alt="Guacamole">
+      <p>Guacamole casero. Las recetas. Súper rápido y fácil, así son nuestras recetas de guacamole casero, perfectas para añadir a tus fajitas, quesadillas, o servido como un dip para los nachos. Descubre todas las deliciosas recetas de guacamole que tenemos preparadas para ti, la perfecta guarnición mexicana para tus platos.</p>
+      <form class="comment-section-form">
+        <div class="row">
+          <div class="small-12 column">
+            <textarea id="remarks" name="remarks" placeholder="Déjanos tu comentario..."></textarea>
+            <button class="button expanded primaryColor">Enviar</button>
+          </div>
+        </div>
+      </form>
+
+      <!-- NOTE: Separador -->
+      <hr class="navBar">
+
+      <!-- NOTE: Segunda Entrada -->
+      <h2 class="font1rstColor">Pizza Casera</h2>
+      <h6 class="font1rstColor">18 de Enero de 2018</h6>
+      <img src="util/img/food_pizza.jpg" alt="Pizza">
+      <p>La mejor forma de hacer pizza en casa es hacerla sin complicaciones, sin prisas ni preocupaciones. Sale con los ingredientes más sencillos. Solo necesita un poco de dedicación.<br>
+        En la cocina, como en casi cualquier cosa en la vida, podemos llegar a complicarnos tanto como queramos, pero también ocurre al revés. Con la pizza podemos complicarnos todo lo que queramos. Por ejemplo, podemos hacer una pizza con una harina específica, o mezclando harinas. Podemos hacer la pizza con una fermentación en frio, con varias fermentaciones, podemos añadir masa madre, o poner una levadura u otra. Podemos hacer la pizza con salsa de tomate muy elaborada, podemos usar piedra para el horno, unos ingredientes u otros, etc.</p>
+        <form class="comment-section-form">
+          <div class="row">
+            <div class="small-12 column">
+              <textarea id="remarks" name="remarks" placeholder="Déjanos tu comentario..."></textarea>
+              <button class="button expanded primaryColor">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+
+    <!-- NOTE: Scripts bases de Foundation -->
+    <script src="util/fou/js/vendor/jquery.js"></script>
+    <script src="util/fou/js/vendor/what-input.js"></script>
+    <script src="util/fou/js/vendor/foundation.js"></script>
+    <script src="util/fou/js/app.js"></script>
+  </body>
+  </html>

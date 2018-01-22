@@ -9,10 +9,13 @@
   background-color: rgba(247,221,213,0.7);
 }
 .tertiaryColor{
-  background-color: rgba(232, 38, 22, 0.8);
+  background-color: rgba(206, 213, 214, 0.8);
 }
 .font1rstColor{
   color: rgba(255, 255, 255, 0.8);
+}
+.font2ndColor{
+  color: rgb(108, 108, 108);
 }
 /* :::::::::::::Colores<close>::::::::::::: */
 
@@ -25,6 +28,7 @@ body{
   background-size:cover;
   background-attachment: fixed;
 }
+
 .border-right{
   border-right: 0.5px solid #F5EEEC;
 }
@@ -39,6 +43,17 @@ h5{
   border-radius: 3px;
   margin: 5px;
   padding: 10px;
+}
+.navBar{
+  border: 0.5px solid #F5EEEC;
+  border-radius: 3px;
+}
+.navBar:hover{
+  background-color: rgba(232, 38, 22, 0.8);
+  transition: background 2s;
+}
+ul>h4>li{
+  background-color: #DBDBDB;
 }
 /* :::::::::::::Estilos generales<close>::::::::::::: */
 
