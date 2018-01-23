@@ -1,16 +1,27 @@
-h5{
+/* :::::::::::::Generales<open>::::::::::::: */
+body{
+  background: url("../../img/turism_back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-size{
+  width: 80%;
+}
+.nav-height{
+  height: 100px;
   width: 100%;
 }
-
-#contenedor_vertical{
-  height: 500px;
+.btn-margin{
+  margin: 20px;
 }
 
-.cuadrado{
-  width: 100px;
-  height: 100px;
-  background-color: #03a9f4;
-  text-align: center;
-  margin: 10px;
-  display: inline-block;
+/* :::::::::::::Generales<close>::::::::::::: */
+
+
+
+@media all and(max-width:600px) {
+  .img-size{
+    width: 40%;
+  }
 }
