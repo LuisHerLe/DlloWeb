@@ -1,0 +1,26 @@
+- JS: Lenguaje basado en funciones
+- ECMAScript: lenguaje de programación publicado por ECMA International, que es el que define el comportamiento, las funcionalidades, las formas de trabajar y todo lo relacionado con el lenguaje. 
+	http://www.ecma-international.org/publications/standards/Ecma-262.htm
+	- Creado por Brenda Eich
+	- Fue anunciado oficialmente en 1996 con una especificación llamada ECMA-262
+- Diferencia entre minusculas y mayusculas	
+*****::::: Diccionario de datos :::::*****
+* Navegador: navigator (Objeto)
+* DOM: document (Objeto)
+* Ventana del navegador: window (Objeto)
+* Evento: Acción que ejecuta el usuario (Ek: Dar un click)
+
+* function: Función. Conjunto de instrucciones o acciones que puede ser reutilizado o invocado desdecualquier parte
+
+*****::::: Sintaxis :::::*****
+- Declarar función:
+	function nombreFuncion(){
+		acción a ejecutar
+	}
+- Comentarios de línea ( // )
+	// var a,b,c
+- Comentarios de bloque ( /* ….. */ )
+	/* var a,b,c
+		a=2
+		b=3*/
+		
