@@ -5,10 +5,14 @@
   <meta charset="utf-8">
   <title>Blog de Turismo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+  <!-- NOTE: CSS para los íconos -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="util/mat/MaterialDesign-Webfont-master/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+  <!-- NOTE: Estilos propios de Materialize -->
   <link rel="stylesheet" href="util/mat/css/materialize.min.css" type="text/css" media="screen, proyection">
   <link rel="stylesheet" href="util/mat/css/styles.css">
-  <link href="util/mat/MaterialDesign-Webfont-master/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+  <!-- NOTE: Estilos de Fuentes online de google -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 
 </head>
@@ -16,90 +20,243 @@
   <div class="row">
 
 
-  <nav class="nav-height">
+    <nav class="nav-height">
 
-    <!-- NOTE: Se crea barra de navegación responsive con tooltips-->
-    <div class="nav-wrapper  blue darken-2">
+      <!-- NOTE: Se crea barra de navegación responsive con tooltips-->
+      <div class="nav-wrapper  blue darken-2">
 
-      <!-- NOTE: Logo -->
-      <a href="#" class="brand-logo left"><img class="responsive-img circle z-depth-5 img-size" src="util/img/turism_logo.png"></a>
-      <a href="#" data-activates="mobile" class="button-collapse">
-        <i class="mdi-navigation-menu"></i>
-      </a>
+        <!-- NOTE: Logo -->
+        <a href="#" class="brand-logo left"><img class="responsive-img circle z-depth-5 img-size" src="util/img/turism_logo.png"></a>
+        <a href="#" data-activates="mobile" class="button-collapse">
+          <i class="mdi-navigation-menu"></i>
+        </a>
 
-      <!-- NOTE: Barra de navegación para Large y Medium -->
-      <ul class="right hide-on-small-only">
-        <li class="active"><a class="tooltipped" href="index.html" data-position="bottom" data-delay="50" data-tooltip="Inicio"><i class="large material-icons left">home</i><span class="hide-on-med-and-down">Inicio</span></a></li>
-        <li><a class="tooltipped" href="#find" data-position="bottom" data-delay="50" data-tooltip="Destinos"><i class="material-icons Small left">flight</i><span class="hide-on-med-and-down">Buscar Destinos</span></a></li>
-        <li><a class="tooltipped" href="#CheckIn" data-position="bottom" data-delay="50" data-tooltip="CheckIn"><i class="material-icons Small left">flight_takeoff</i><span class="hide-on-med-and-down">Check-In</span></a></li>
-        <li><a class="tooltipped" href="#FlyHistory" data-position="bottom" data-delay="50" data-tooltip="Historial"><i class="material-icons Small left">folder_special</i><span class="hide-on-med-and-down">Historial de Vuelos</span></a></li>
-        <li><a class="tooltipped" href="#LogIn" data-position="bottom" data-delay="50" data-tooltip="Login"><i class="material-icons Small left">account_circle</i><span class="hide-on-med-and-down">Iniciar Sesión</span></a></li>
-      </ul>
+        <!-- NOTE: Barra de navegación para Large y Medium -->
+        <ul class="right hide-on-small-only">
+          <li class="active"><a class="tooltipped" href="index.html" data-position="bottom" data-delay="50" data-tooltip="Inicio"><i class="large material-icons left">home</i><span class="hide-on-med-and-down">Inicio</span></a></li>
+          <li><a class="tooltipped" href="#find" data-position="bottom" data-delay="50" data-tooltip="Destinos"><i class="material-icons Small left">flight</i><span class="hide-on-med-and-down">Buscar Destinos</span></a></li>
+          <li><a class="tooltipped" href="#CheckIn" data-position="bottom" data-delay="50" data-tooltip="CheckIn"><i class="material-icons Small left">flight_takeoff</i><span class="hide-on-med-and-down">Check-In</span></a></li>
+          <li><a class="tooltipped" href="#FlyHistory" data-position="bottom" data-delay="50" data-tooltip="Historial"><i class="material-icons Small left">folder_special</i><span class="hide-on-med-and-down">Historial de Vuelos</span></a></li>
+          <li><a class="tooltipped" href="#LogIn" data-position="bottom" data-delay="50" data-tooltip="Login"><i class="material-icons Small left">account_circle</i><span class="hide-on-med-and-down">Iniciar Sesión</span></a></li>
+        </ul>
 
-      <!-- NOTE: SideNav solo para SmarthPhone sin Tooltip -->
-      <ul class="side-nav" id="mobile">
-        <li class="active"><a href="index.html"><i class="large material-icons left">home</i>Inicio</a></li>
-        <li><a href="#find"><i class="material-icons Small left">flight</i>Buscar Destinos</a></li>
-        <li><a href="#CheckIn"><i class="material-icons Small left">flight_takeoff</i>Check-In</a></li>
-        <li><a href="#FlyHistory"><i class="material-icons Small left">folder_special</i>Historial de Vuelos</a></li>
-        <li><a href="#LogIn"><i class="material-icons Small left">account_circle</i>Iniciar Sesión</a></li>
-      </ul>
-      <a href="#" data-activates="mobile" class="button-collapse right hide-on-med-and-up"><i class="material-icons">menu</i></a>
-    </div>
-
-    <!-- NOTE: Slogan -->
-    <div class="row">
-      <div class="col s6 m10 l10 push-s6 push-m6 push-l6 ">
-        <h5 class="z-depth-3 blue darken-2">Porque ponemos a volar tus sueños</h5>
+        <!-- NOTE: SideNav solo para SmarthPhone sin Tooltip -->
+        <ul class="side-nav" id="mobile">
+          <li class="active"><a href="index.html"><i class="large material-icons left">home</i>Inicio</a></li>
+          <li><a href="#find"><i class="material-icons Small left">flight</i>Buscar Destinos</a></li>
+          <li><a href="#CheckIn"><i class="material-icons Small left">flight_takeoff</i>Check-In</a></li>
+          <li><a href="#FlyHistory"><i class="material-icons Small left">folder_special</i>Historial de Vuelos</a></li>
+          <li><a href="#LogIn"><i class="material-icons Small left">account_circle</i>Iniciar Sesión</a></li>
+        </ul>
+        <a href="#" data-activates="mobile" class="button-collapse right hide-on-med-and-up"><i class="material-icons">menu</i></a>
       </div>
-    </div>
-  </nav>
+
+      <!-- NOTE: Slogan -->
+      <div class="row">
+        <div class="col s6 m6 l10 push-s6 push-m6 push-l2 ">
+          <h5 class="z-depth-3 blue darken-2">Porque ponemos a volar tus sueños</h5>
+        </div>
+      </div>
+    </nav>
   </div>
 
   <!-- NOTE: Contenido principal -->
-    <div class="row">
-      <!-- NOTE: Barra de Redes Sociales -->
-      <div class="col s1 m1 l1">
-        <div class="col s12">
-          <a href="#" class="btn btn-floating btn-margin ">
-            <i class="mdi mdi-facebook blue darken-2"></i>  <!-- facebook -->
-          </a>
-        </div>
-        <div class="col s12">
-          <a href="#" class="btn btn-floating btn-margin">
-            <i class="mdi mdi-instagram blue darken-2"></i>
-          </a>
-        </div>
-        <div class="col s12">
-          <a href="#" class="btn btn-floating btn-margin">
-            <i class="mdi mdi-twitter blue darken-2"></i>
-          </a>
-        </div>
-        <div class="col s12">
-          <a href="#" class="btn btn-floating btn-margin">
-            <i class="mdi mdi-pinterest blue darken-2"></i>
-          </a>
-        </div>
-        <div class="col s12">
-          <a href="#" class="btn btn-floating btn-margin">
-            <i class="mdi mdi-youtube-play blue darken-2"></i>
-          </a>
+  <div class="row">
+    <!-- NOTE: Columna de Redes Sociales -->
+    <div class="col s1 m1 l1">
+      <div class="col s12">
+        <a href="#" class="btn btn-floating btn-margin ">
+          <i class="mdi mdi-facebook blue darken-2 waves-effect waves-light"></i>  <!-- facebook -->
+        </a>
+      </div>
+      <div class="col s12">
+        <a href="#" class="btn btn-floating btn-margin">
+          <i class="mdi mdi-instagram blue darken-2 waves-effect waves-orange"></i>
+        </a>
+      </div>
+      <div class="col s12">
+        <a href="#" class="btn btn-floating btn-margin">
+          <i class="mdi mdi-twitter blue darken-2 waves-effect waves-teal"></i>
+        </a>
+      </div>
+      <div class="col s12">
+        <a href="#" class="btn btn-floating btn-margin">
+          <i class="mdi mdi-pinterest blue darken-2 waves-effect waves-red"></i>
+        </a>
+      </div>
+      <div class="col s12">
+        <a href="#" class="btn btn-floating btn-margin">
+          <i class="mdi mdi-youtube-play blue darken-2 waves-effect waves-green"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- NOTE: Columna de galería de imágenes con Material Box-->
+    <div class="col s11 m11 l11">
+      <!-- NOTE: Galería Izquierda -->
+      <div class="col s11 m3 l4 push-s1">
+        <div class="card blue lighten-4">
+          <div class="col l12 card blue darken-3">
+            <img class="materialboxed responsive-img z-depth-3 style-gal" width="650" src="util/img/turism_izq_IslasMarg.jpg">
+          </div>
+          <div class="col l12 card blue darken-3">
+            <img class="materialboxed responsive-img z-depth-3 style-gal" width="650" src="util/img/turism_izq_puntaCana.jpg">
+          </div>
         </div>
       </div>
 
+      <!-- NOTE: Galería Central con Slider -->
+      <div class="col s11 m5 l4">
+        <div class="col s12 m12 l12 card blue darken-3 push-s1">
+          <div class="slider ">
+            <ul class="slides ">
+              <li>
+                <img class="responsive-img z-depth-3" src="util/img/turism_cen_nuevaZel.jpg">
+                <div class="caption center-align">
+                  <h3>Nueva Zelanda, paraiso natural!</h3>
+                  <h5 class="light grey-text text-lighten-3">Porque ponemos a volar tus sueños</h5>
+                </div>
+              </li>
+              <li>
+                <img class="responsive-img z-depth-3" src="util/img/turism_cen_escocia.jpg">
+                <div class="caption left-align">
+                  <h3>Piscinas naturales en Escocia!</h3>
+                  <h5 class="light grey-text text-lighten-3">Porque ponemos a volar tus sueños</h5>
+                </div>
+              </li>
+              <li>
+                <img class="responsive-img z-depth-3" src="util/img/turism_cen_dettifoss.jpg">
+                <div class="caption right-align">
+                  <h3>Ríndete ante la majestuosidad de Dettifoss, Islandia!</h3>
+                  <h5 class="light grey-text text-lighten-3">Porque ponemos a volar tus sueños</h5>
+                </div>
+              </li>
+              <li>
+                <img class="responsive-img z-depth-3" src="util/img/turism_cen_montanasFuego.jpg">
+                <div class="caption center-align">
+                  <h3>Siéntete como en la Luna sin salir de la Tierra, en LanzaroteLanzarote</h3>
+                  <h5 class="light grey-text text-lighten-3">Porque ponemos a volar tus sueños</h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- NOTE: Galería Derecha con Material Box-->
+      <div class="col s11 m3 l4 push-s1">
+        <div class="card blue lighten-4">
+          <div class="col s11 l12 card blue darken-3 push-s1">
+            <img class="materialboxed responsive-img z-depth-3 style-gal" width="650" src="util/img/turism_der_Cacun.jpg">
+          </div>
+          <div class="col l12 card blue darken-3">
+            <img class="materialboxed responsive-img z-depth-3 style-gal" width="650" src="util/img/turism_der_islasRosario.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTE: Contenido escrito -->
+  <div class="row">
+    <!-- NOTE: Columna Izquierda -->
+    <div class="col s11 m8 l8 push-s1">
+      <div class="card blue lighten-5 z-depth-4">
+
+        <!-- NOTE: Primera Entrada -->
+        <div class="card">
+          <p class="flow-text">
+            <img class="responsive-img z-depth-5 content-img" src="util/img/turism_cen_montanasFuego.jpg">
+          </p>
+          <h4 class="grey-text">Montañas del Fuego – Timanfaya</h4>
+          <h6 class="grey-text">24 de Enero de 2018</h6>
+          <p class="flow-text grey-text content-text btn-margin">Nacidas tras las violentas erupciones volcánicas que azotaron el sur de Lanzarote entre los años 1730 y 1736 que dieron origen al Parque Nacional de Timanfaya, las Montañas del Fuego poseen la belleza de la desolación y regalan una sinfonía de colores ocres que nunca deja indiferente al espectador, empequeñecido por una obra de arte imponente y viva, en la que Manrique volvió a estampar su firma concibiendo un espacio en el que conviven el arte, el hombre y la naturaleza de forma armónica.<br> <br>
+            El calor, extremo, se desliza hacia la superficie y se refleja a través de experiencias inolvidables que asombran al visitante. El conjunto natural y artístico de Las Montañas del Fuego permite al visitante recorrer la Ruta de los Volcanes a bordo de vehículos especialmente acondicionados para ofrecer una vivencia única entre algunas de las maravillas naturales que esconde ese singular paisaje lunar.</p>
+
+            <!-- NOTE: Comentarios Primera Entrada -->
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12 m6 l6">
+                    <i class="mdi mdi-comment-text-outline small"></i>
+                    <textarea id="icon_prefix2" class="materialize-textarea" placeholder="Ingresa tus comentarios..."></textarea>
+                    <a class="blue darken-2 waves-effect waves-light btn">Enviar</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- NOTE: Segunda Entrada -->
+          <div class="card">
+            <p class="flow-text">
+              <img class="responsive-img z-depth-5 content-img" src="util/img/turism_cen_dettifoss.jpg">
+            </p>
+            <h4 class="grey-text">Dettifoss</h4>
+            <h6 class="grey-text">12 de Enero de 2018</h6>
+            <p class="flow-text grey-text content-text btn-margin">Después de visitar el Cañón de Ásbyrgi seguimos bordeando la costa norte de Islandia hasta que llegamos a la desembocadura del río Jökulsá á Fjöllum en Öxarfjörður, y desde allí comenzamos camino hacia el Sur.<br> <br>
+              Hay dos caminos para ir hacia el Sur hasta volver a cruzarnos con la Ring Road. Por la erupción del volcán Bardarbunga la carretera del lado Oeste del río está cerrada por peligro de riada así que no tuvimos elección y empezamos la travesía por el lado Este del río. Este río, el Jökulsá á Fjöllum, nace directamente del Glaciar Vatnajökull, el más grande de Europa. <br> <br>
+              La primera catarata importante que nos encontramos es Hafragilsfoss y para llegar hasta el mirador desde donde podemos verla las pasamos negras porque la carretera estaba bastante mal… ¡¡ Aquí se agradece haber alquilado un 4×4 !!. Aunque se ve desde bastante lejos impresiona su tamaño y la cantidad de agua que lleva. </p>
+
+              <!-- NOTE: Comentarios Segunda Entrada -->
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12 m6 l6">
+                      <i class="mdi mdi-comment-text-outline small"></i>
+                      <textarea id="icon_prefix2" class="materialize-textarea" placeholder="Ingresa tus comentarios..."></textarea>
+                      <a class="blue darken-2 waves-effect waves-light btn">Enviar</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- NOTE: Columna Derecha -->
+        <div class="col s11 m4 l4 push-s1">
+          <div class="card blue lighten-5 z-depth-4 ">
+            <div class="card ">
+
+              <!-- NOTE: Información del Autor-->
+              <div class="card">
+                <p class="flow-text center-align">
+                  <img class="responsive-img z-depth-5 border_auth_img" src="util/img/autor_profile.jpg">
+                </p>
+                <hr>
+                <h5 class="center-align grey-text">Autor: Luis Hernández</h5>
+                <p class="center-align btn-margin grey-text">Mi nombre es Luis Hernández, ingeniero Informático enfocado a la calidad del Software y aprendiz de desarrollo web en NextU, este blog fue un reto porque es de mis primeras págias incursionando en los frameworks de desarrollo de páginas web HTML5, fue un gusto poder presentar ante ustedes este entregable y espero que sea del agrado de todos. <br> <br>
+                Les aseguro que vendrán muchos entregables mejores que estos!. </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
 
 
 
+    <!-- NOTE: Scripts bases de Materialize -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="util/mat/js/materialize.min.js"></script>
+    <script>
+    // NOTE: Se Inicializa el sideNav para el menú desplegable
+    $(".button-collapse").sideNav();
 
+    // NOTE: Se inicializa el material Box para las imágenes de las galerías de la izquierda y derecha
+    $(document).ready(function(){
+      $('.materialboxed').materialbox();
+    });
 
-  <!-- NOTE: Scripts bases de Materialize -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="util/mat/js/materialize.min.js"></script>
-  <script>
-  // NOTE: Se Inicializa el sideNav para el menú desplegable
-  $(".button-collapse").sideNav();
-</script>
-</body>
-</html>
+    // NOTE: Se inicializa el Slider para las imágenes de la galería Centra
+    $(document).ready(function(){
+      $('.slider').slider();
+    });
+
+    </script>
+  </body>
+  </html>

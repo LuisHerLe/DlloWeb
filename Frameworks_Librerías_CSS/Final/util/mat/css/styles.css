@@ -4,7 +4,9 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+html{
+  font-family: 'Open Sans', sans-serif !important;
+}
 .img-size{
   width: 80%;
 }
@@ -15,7 +17,25 @@ body{
 .btn-margin{
   margin: 20px;
 }
+.style-gal{
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border-radius: 2px;
+}
 
+.content-img{
+  padding: 10px;
+  margin: 10px;
+  float: left;
+  width: 30%;
+}
+.content-text{
+  font-size: 1rem;
+}
+
+.border_auth_img{
+  border-radius: 50%;
+}
 /* :::::::::::::Generales<close>::::::::::::: */
 
 
