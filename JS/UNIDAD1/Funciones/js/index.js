@@ -11,7 +11,7 @@ nombreFuncion()  // Recordar los parentesis para ejecutarla ;
 
 // Parametros
 
-function nombreFuncion(nombre, apellido, edad, peso, .... paramN) {
+function nombreFuncion(nombre, apellido, edad, peso, . ... paramN) {
     // Bloque de código
 }
 
