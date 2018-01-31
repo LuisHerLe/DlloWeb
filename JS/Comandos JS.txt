@@ -97,3 +97,23 @@ obtenerPromedio:function(){
 - Menor que: <
 - Mayor o igual que: >=
 - Menor o igual que: <= 
+
+*****:::::Funciones Autoejecutables:::::*****	
+(function(){
+  //Código de la función
+})()
+
+*****:::::Funciones Anónimas:::::*****	
+Consta en recibir en una función otra función como parámetro
+function saludar(nombre, Function(){
+ //Código de la función
+})
+
+*****:::::Funciones Callback:::::*****	
+Se envía como parametro a otra función para tener bajo control el tiempo de ejecución del código, este se ejecute al final de todas las instrucciones
+function personalizada(num1, num2, funcion2){
+  var resu = num1 + num2;
+  funcion2(resu)
+}
+
+personalizada(4,8,function(resu){alert(resu);});

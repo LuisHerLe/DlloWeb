@@ -20,7 +20,9 @@
 	var nombre_variable;
 * Métodos: Son los procesos que se utilizan para operar o transformar las variables para obtener resultados (Vease Function)	
 * function: Función. Conjunto de instrucciones o acciones que puede ser reutilizado o invocado desdecualquier parte
-
+* Contexto: Espacio en memoria que almacena todas las variables de las funciones, esta se libera cuando la función termina
+* Closures: Funciones internas que manejan variables independientes 
+* Hoisting: (Elevación) No importa el lungar donde se haya definido la variable dentro de la función, el intérprete js la eleva y la pone al comienzo de su contexto
 *****::::: Tipos :::::*****
 * Números: Números enteros o decimales
 	- var num = 40.1 / num = 40
