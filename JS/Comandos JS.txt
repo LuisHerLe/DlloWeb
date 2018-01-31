@@ -1,0 +1,99 @@
+*****::::: Sintaxis :::::*****
+- Declarar función:
+	function nombreFuncion(){
+		acción a ejecutar
+	}
+		 
+- Comentarios de línea ( // )
+	// var a,b,c
+- Comentarios de bloque ( /* ….. */ )
+	/* var a,b,c
+		a=2
+		b=3*/
+		
+*****::::: Comandos básicos :::::*****
+- Objeto: Console
+	Función: log
+		- console.log("Escribiendo mensaje en la consola")
+- Función: Ejecutar cada cierto tiempo una función
+	setInterval(escribirEnConsola,1000)		
+- Objeto document (Almacenar en una variable un elemento buscado por ID)
+	Función: getElementById
+		- var calendario = document.getElementById('calendario');
+- typeof: Para saber el tipo de datos	
+	typeof 13; // typeof variable
+
+- x.tofixed(dígitos_decilames) Indica cuantos decimales se va a mostrar
+	x.tofixed(0): = "378"
+	x.tofixed(1): = "378.1"
+	x.tofixed(3): = "378.059"
+		
+*****::::: Tipos de datos numéricos :::::*****		
+- Math.min(0,150,30,20,-8,-200);
+- Math.random();
+- Math.round(4.7);  
+- Math.E: Retorna los números Euler
+- Math.PI: Retorna el número PI
+- Math.SQRT2: Retorna la raiz cuadrada de 2
+- Math.SQRT1_2: Retorna la raiz cuadrada de 1/2
+- Math.LN2: Retorna el logaritmo natural de 2
+- Math.LN10: Retorna el logaritmo natural de 10
+- Math.LOGE2: Retorna el logaritmo base 2 de E
+- Math.LOG10E: Retorna el logaritmo base 10 de E
+abs(x): Retorna el valor absoluto de x
+
+*****::::: Tipos de Fecha:::::*****	
+- Clase: Date (New Date())
+- Date.getTime: Retorna el valor en milisegundos
+- Date.getDate: Retorna el día del mes (entre 1 y 31
+- Date.getDay: Retorna el día de la semana (Entre 1 y 7)
+
+*****:::::Matrices:::::*****
+Ayudas: https://msdn.microsoft.com/es-es/library/tkcsy6fe(v=vs.94).aspx	
+splice: El método splice modifica arrayObj quitando el número especificado de elementos desde la posición start e insertando elementos nuevos.Los elementos eliminados se devuelven como un nuevo objeto Array.
+	var arr = new Array("4", "11", "2", "10", "3", "1");
+	arr.splice(2, 2, "21", "31");
+	document.write(arr);
+
+// Output: 4,11,21,31,3,1
+
+*****::::: Objetos:::::*****	
+var estudiante={
+nombre:"Luifo",
+curso:7,
+matematicas:6,
+ciencias:8,
+ingles:9,
+obtenerNombre: function(){
+	return this.nombre;
+},
+obtenerPromedio:function(){
+	var promedio=(this.matematicas+this.ciencias+this.ingles)/3;
+	return promedio;
+}
+};
+*****:::::Operadores Aritméticos:::::*****	
+- Módulo: Verifica sin un número es par o impar
+	var modulo = 9 % 3
+- Incremento: Sumar de a uno a una variable	
+		++num
+- Decremento: Restar de a uno a una variable	
+		--num		
+
+*****:::::Operadores Lógicos:::::*****	
+- NOT: Se utiliza parea obtener el valor contrario al que tiene la variable
+	- Representa: !
+- AND: Se utiliza para utilizar más de una condición y que sea verdadera cada condición
+	- Representación: &&
+- OR: Se utiliza para utilizar más de una condición y que sea al menos una condición verdadera
+	- Representación: ||
+
+*****:::::Condicionales:::::*****	
+- Igual a: ==
+- Igual valor e igual tipo: ===
+- Diferente: !=
+- Diferente valor y diferente tipo: !==
+- Mayor que: >
+- Menor que: <
+- Mayor o igual que: >=
+- Menor o igual que: <= 

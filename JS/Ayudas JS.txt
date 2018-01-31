@@ -4,13 +4,38 @@
 	- Creado por Brenda Eich
 	- Fue anunciado oficialmente en 1996 con una especificación llamada ECMA-262
 - Diferencia entre minusculas y mayusculas	
+- Palabras reservadas:
+	- https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Palabras_Reservadas
 *****::::: Diccionario de datos :::::*****
 * Navegador: navigator (Objeto)
 * DOM: document (Objeto)
 * Ventana del navegador: window (Objeto)
 * Evento: Acción que ejecuta el usuario (Ek: Dar un click)
+* Algoritmo:  Seguir un conjunto de pasos para llegar a una solución // Grupo finito de operaciones organizadas de manera lógica y ordenada que permite solucionar un determinado problema.
 
+
+* Variable: Contenedor que almacena valores de tipo numérico o de tipo texto.
+* Debilmente tipado: Una variable puede almacenar al inicio del código un número y a medida que se va recorriendo el script de esta variable, esta puede almacenar texto sin necesidad de convertir el tipo de valor.
+* Declaración de variables: Declarar una variable es decirle a la máquina que voy a tener una variable con un nombre determinado, esto se hace: 
+	var nombre_variable;
+* Métodos: Son los procesos que se utilizan para operar o transformar las variables para obtener resultados (Vease Function)	
 * function: Función. Conjunto de instrucciones o acciones que puede ser reutilizado o invocado desdecualquier parte
+
+*****::::: Tipos :::::*****
+* Números: Números enteros o decimales
+	- var num = 40.1 / num = 40
+* Booleanos: Verdadedor o falso
+	- var switch = false;
+* Cadenas de caracteres: String
+	- var string = "Hola Luifo"
+* Vectores: Serie de valores de un mismo tipo almacenados en una posición específica (Array) 
+	- var vector=[3,12,35,6,9,16,26,40,27,1];
+
+* Matrix: Vectores de 2 dimensiones que almacena datos del mismo tipo en una posición específica (X,Y)	
+	Obtener fila completa: matriz[0];
+	Obtener un dato en concreto: matriz[0][1] (Fila,Columna)
+	
+* Objetos
 
 *****::::: Sintaxis :::::*****
 - Declarar función:
