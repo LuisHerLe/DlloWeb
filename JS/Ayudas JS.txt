@@ -51,3 +51,6 @@
 		a=2
 		b=3*/
 		
+*****::::: IMPORTANTE :::::*****
+JavaScript no reconoce los campos CSS que llevan "-", por lo que se debe copiar en camlle Case y sin espacios
+	CSS: flex-flow - JavaScript: FlexFlow

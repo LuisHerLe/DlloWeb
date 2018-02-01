@@ -117,3 +117,18 @@ function personalizada(num1, num2, funcion2){
 }
 
 personalizada(4,8,function(resu){alert(resu);});
+
+*****:::::Selectores JavaScript:::::*****	
+- getElementById("id")
+- getElementByClassName("nombre_Clase")
+- getElementByName("etiqueta_nombre")
+- getElementByTagName("tag_nombre")
+- querySelector
+	document.querySelector(".card-image");
+- querySelectorAll
+	imagenes_tarjetas= document.querySelectorAll(".card-image");
+	for(i=0;i < imagenes_tarjetas.length; i++) { imagenes_tarjetas[i].style.width="100px" }
+	
+*****:::::Modificar Estilos con Selectores JavaScript:::::*****	
+Cuando se encuentra un solo elemento en el DOM, se pone por defecto el index 0 ("[0]"), si se encuentra más de un elemento, se debe recorrer con un for (como ejemplo de querySelectorAll)
+	document.getElementsByClassName("card large")[0].style.border = "3px solid orange"; 
