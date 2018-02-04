@@ -1,3 +1,5 @@
+/*
+  Ejercicio de Codificación de Unidades 1 y 2 de JS
 function changeBackground1(){
 
   // NOTE: Crea una función que reciba como parámetro un elemento del DOM y cambie su color de fondo por el siguiente: #4d62d0
@@ -48,3 +50,9 @@ function changeBack_CentralContain(){
 changeBackground1();
 changeColor1();
 changeBack_CentralContain();
+
+*/
+
+  //Ejercicios de Codificación de Unidad 3 de JS
+  // NOTE: Busca en la estructura HTML el elemento de tipo radio button, relacionado con el ícono del audio, e identifica una manera de seleccionarlo mediante JavaScript.
+  var radioAudio = document.getElementById("speaker-radio");
