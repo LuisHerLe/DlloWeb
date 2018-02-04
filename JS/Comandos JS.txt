@@ -132,3 +132,19 @@ personalizada(4,8,function(resu){alert(resu);});
 *****:::::Modificar Estilos con Selectores JavaScript:::::*****	
 Cuando se encuentra un solo elemento en el DOM, se pone por defecto el index 0 ("[0]"), si se encuentra más de un elemento, se debe recorrer con un for (como ejemplo de querySelectorAll)
 	document.getElementsByClassName("card large")[0].style.border = "3px solid orange"; 
+	
+*****:::::Elementos de Formularios:::::*****		
+- Modificar estados de checkBox	
+	document.getElementById("activar_rb").checked = "true" //Cambiar estado (true/false)
+	document.getElementById("activar_rb").disabled = "true" //Habilitar o deshabilitar
+- Modificar RadioButtom
+	document.getElementById("animales").checked = "true" //Cambiar estado (true/false)
+	document.getElementById("animales").disabled = "true" //Habilitar o deshabilitar
+- Modificar estados de Select
+	document.getElementById("sel_animales").disabled=true; //Cambiar estado (true/false)
+- Seleccionar una opción del select
+	document.getElementById("sel_postres").querySelector("option[value='helado']").selected = true;
+		--Para materialize se debe ejecutar el siguiente código y así renderizará los scripts de javascript
+			$(document).ready(function(){
+				$("select").material_select();
+			});

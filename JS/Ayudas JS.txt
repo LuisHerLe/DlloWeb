@@ -23,6 +23,7 @@
 * Contexto: Espacio en memoria que almacena todas las variables de las funciones, esta se libera cuando la función termina
 * Closures: Funciones internas que manejan variables independientes 
 * Hoisting: (Elevación) No importa el lungar donde se haya definido la variable dentro de la función, el intérprete js la eleva y la pone al comienzo de su contexto
+* innerHTML: Sirve para acceder al contenido de un objeto DOM y modificarlo con un nuevo contenido
 *****::::: Tipos :::::*****
 * Números: Números enteros o decimales
 	- var num = 40.1 / num = 40
@@ -54,3 +55,5 @@
 *****::::: IMPORTANTE :::::*****
 JavaScript no reconoce los campos CSS que llevan "-", por lo que se debe copiar en camlle Case y sin espacios
 	CSS: flex-flow - JavaScript: FlexFlow
+	
+*****::::: MODIFICAR CÓDIGO :::::*****
