@@ -1,0 +1,54 @@
+{
+  "usuarios":[
+    {
+      "identificacion" : 12345,
+      "nombre" : "Luis",
+      "apellido" : "Hernández",
+      "edad" : 32,
+      "email" : "luifo@luifo.com",
+      "telefono" : 1234567,
+      "direccion" : "cl 1 · 1",
+      "estado" : "activo"
+    },
+    {
+      "identificacion" : 12345,
+      "nombre" : "Luis",
+      "apellido" : "Hernández",
+      "edad" : 32,
+      "email" : "luifo@luifo.com",
+      "telefono" : 1234567,
+      "direccion" : "cl 1 · 1",
+      "estado" : "activo"
+    },
+    {
+      "identificacion" : 12345,
+      "nombre" : "Luis",
+      "apellido" : "Hernández",
+      "edad" : 32,
+      "email" : "luifo@luifo.com",
+      "telefono" : 1234567,
+      "direccion" : "cl 1 · 1",
+      "estado" : "activo"
+    },
+    {
+      "identificacion" : 12345,
+      "nombre" : "Luis",
+      "apellido" : "Hernández",
+      "edad" : 32,
+      "email" : "luifo@luifo.com",
+      "telefono" : 1234567,
+      "direccion" : "cl 1 · 1",
+      "estado" : "activo"
+    },
+    {
+      "identificacion" : 12345,
+      "nombre" : "Luis",
+      "apellido" : "Hernández",
+      "edad" : 32,
+      "email" : "luifo@luifo.com",
+      "telefono" : 1234567,
+      "direccion" : "cl 1 · 1",
+      "estado" : "activo"
+    }
+  ]
+}

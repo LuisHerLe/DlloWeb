@@ -24,6 +24,7 @@
 * Closures: Funciones internas que manejan variables independientes 
 * Hoisting: (Elevación) No importa el lungar donde se haya definido la variable dentro de la función, el intérprete js la eleva y la pone al comienzo de su contexto
 * innerHTML: Sirve para acceder al contenido de un objeto DOM y modificarlo con un nuevo contenido
+* append: Sirve para modificar la estructura html
 *****::::: Tipos :::::*****
 * Números: Números enteros o decimales
 	- var num = 40.1 / num = 40
@@ -57,3 +58,26 @@ JavaScript no reconoce los campos CSS que llevan "-", por lo que se debe copiar 
 	CSS: flex-flow - JavaScript: FlexFlow
 	
 *****::::: MODIFICAR CÓDIGO :::::*****
+- innerHTML
+	document.getElementsByTagName("h5")[1].innerHTML = "Selecciona tu animal favorito y tus postres preferidos.";
+	
+*****::::: Eventos :::::*****
+::De teclado::
+	- Keypress: Cuando se presiona una tecla
+	- keydown: Cuando se mantiene presionada una tecla
+	- keyup: Cuando se deja de presionar una tecla
+::De mouse::
+	- onclick: Cuando se da click
+		document.getElementById("astronauta").onclick=cambioFotoAstronauta;
+	- ondblclick: Cuando se da docle click
+		document.getElementById("extraterrestre").ondblclick=cambioFotoExtraterrestre;
+	- onmouseover: Cuando el mouse entra en un objeto DOM (pasa por encima de algo)
+		document.getElementById("planetas").onmouseover=cambioFotosPlatenas;
+	- onmouseout: Cuando el mouse sale en un objeto DOM (Deja de pasar dobre este)
+		document.getElementById("nave_espacial").onmouseout=cambioFotoNave;
+
+::Otros::
+	- onchange: Cuando un objeto DOM cambia alguno de sus atributos
+	- onload: Cuando termina de cargar el objeto DOM
+	- onfocus: Cuando un objeto DOM está activado (Normalmente para input, select)
+	- onblur: Cuando un objeto pierde el foco

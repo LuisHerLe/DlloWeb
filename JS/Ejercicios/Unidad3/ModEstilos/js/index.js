@@ -50,9 +50,15 @@ function changeBack_CentralContain(){
 changeBackground1();
 changeColor1();
 changeBack_CentralContain();
-
-*/
+  */
 
   //Ejercicios de Codificación de Unidad 3 de JS
-  // NOTE: Busca en la estructura HTML el elemento de tipo radio button, relacionado con el ícono del audio, e identifica una manera de seleccionarlo mediante JavaScript.
+  // NOTE: Busca en la estructura HTML el elemento de tipo radio button, relacionado con el ícono del audio, e identifica una manera de seleccionarlo mediante JavaScript y poder desactivarlo.   Adicionalmente, debes seleccionar la imágen dentro del contenedor con la clase audio y usar la función setAttribute para modificar el atributo source de la imágen por el siguiente: background-color: #888; #149c5f
   var radioAudio = document.getElementById("speaker-radio");
+  document.querySelector('.audio img').setAttribute("src", "img/mute.png");
+  radioAudio.checked = false;
+
+  // NOTE: Crea una función para activar el sonido
+  document.getElementById("speaker").addEventListener('click', function(){
+    document.querySelector('.audio img').setAttribute("src", "img/speaker.png");
+  })

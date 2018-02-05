@@ -154,7 +154,7 @@ input[type="text"]{
   display: none;
 }
 label > input{
-  visibility: hidden;
+  /*visibility: hidden; Quitar*/
   position: absolute;
 }
 label > input + #speaker{

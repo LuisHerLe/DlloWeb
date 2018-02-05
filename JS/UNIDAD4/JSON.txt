@@ -1,0 +1,22 @@
+Ayudas: www.json.org
+Definición: Javascript Objet Notation
+	Formato ligero para transporte e intercambio de datos
+	Formato estandar definido por el ECMAScript3	
+Estructura:
+	- {
+		Llave: Valor
+	  }
+Ventajas: 
+	- JSON soporta dos tipos de estructuras: un set de pares llave-valor contenidos por un objeto y la otra es un array de valores.
+	- JSON es una estructura totalmente independiente, no necesita de tecnologías alternas.
+	- JSON permite definir estructuras de datos muy complejas.
+	- JSON es un formato muy intuitivo y fácil de comprender.
+	- JSON es totalmente flexible y para extenderlo solo hace falta agregar una nueva propiedad con los valores deseados.
+	- JSON Tiene una alta velocidad de procesamiento y un menor tamaño con respecto a XML.
+:::En conclusión, JSON es usado con frecuencia en ambientes web en los que fluye mucha información entre el cliente y el servidor; y también donde los tiempos de respuesta son vitales para el rendimiento.:::
+
+Sintaxis:
+- Si se crea en javascript, debe definirse una variable y crearse como un objeto
+- Las llaves siempre van entre comillas dobles
+- Los campos van separados por , menos el último
+- Los objetos van separados por , menos el último
