@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Geolocation API</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>Localización: </h1>
+  <a class="waves-effect waves-light btn red" id="btn-geo">Localizate en el mapa!</a>
+  <div class="card" id="map-container">
+    <section id="map"></section>
+  </div>
+
+
+  <script type="text/javascript" src="geo.js"></script>
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+  <script src="materialize/js/materialize.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDJqZAcIQS3sRqZKNfjGzOOCGliqUm1E8&signed_in=true"
+  async defer>
+  </script>
+  <!-- NOTE: google <script
+  src="https://maps.googleapis.com/maps/api/js?callback=initMap&signed_in=true&key=AIzaSyBDJqZAcIQS3sRqZKNfjGzOOCGliqUm1E8" async defer>
+</script>-->
+
+</body>
+</html>

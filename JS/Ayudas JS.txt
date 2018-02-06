@@ -1,4 +1,5 @@
 - JS: Lenguaje basado en funciones
+- Llave google maps AIzaSyBDJqZAcIQS3sRqZKNfjGzOOCGliqUm1E8
 - ECMAScript: lenguaje de programación publicado por ECMA International, que es el que define el comportamiento, las funcionalidades, las formas de trabajar y todo lo relacionado con el lenguaje. 
 	http://www.ecma-international.org/publications/standards/Ecma-262.htm
 	- Creado por Brenda Eich
