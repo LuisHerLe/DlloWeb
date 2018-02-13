@@ -19,8 +19,8 @@ var Calculadora = (function(){
       key = "";
     }
     console.log("ID " + e.id + "ClassName: " + e.className);
-    validateCero()
-    function validateCero(){
+    validateDisplay()
+    function validateDisplay(){
       var display = document.getElementById("display").textContent //Obtener el display
      if (e.className == "tecla suma"){
         key = "+";
