@@ -3,9 +3,10 @@
 var Calculadora = (function(){
   var key= ""; //Variable auxiliar para almacenar los Id's
   var operator = ""; // Variable para indicar la operación
-  var num1 = ""; //Número 1
-  var num2 = ""; //Número 2
-  var contNum = 0; //Variable para contar números
+  var num1 = 0; //Número 1
+  var num2 = 0; //Número 2
+  var contNum = 1; //Variable para contar números
+  var sw = false; //Saber si ya se presionó alguna tecla de operacion (+ - * /)
 
   document.addEventListener("click", function printID(e){
     e = e || window.event;
@@ -13,25 +14,27 @@ var Calculadora = (function(){
 
     console.log("Clase " + e.className);
     //Validar si donde se hace click pertenece a la calculadora
-    if (e.className=="tecla") {
+    classAux = e.className;
+    if (classAux =="tecla") {
       key = e.id
     }else {
       key = "";
     }
-    console.log("ID " + e.id + "ClassName: " + e.className);
+    console.log("ID " + e.id + "ClassName: " + classAux);
     validateDisplay()
     function validateDisplay(){
+
       var display = document.getElementById("display").textContent //Obtener el display
-     if (e.className == "tecla suma"){
+      if (classAux == "tecla suma"){ //Asignar a las variables las operaciones
         key = "+";
         operator = "sumar";
-      }else if(e.className == "tecla multiplica") {
+      }else if(classAux == "tecla multiplica") {
         key = "*";
         operator = "multiplicar"
-      }else if(e.className == "tecla resta") {
+      }else if(classAux == "tecla resta") {
         key = "-";
         operator = "restar"
-      }else if(e.className == "tecla divide") {
+      }else if(classAux == "tecla divide") {
         key = "/";
         operator = "dividir"
       }else if (e.id == "punto") {
@@ -46,30 +49,84 @@ var Calculadora = (function(){
         //Se deja en 0 la calculadora y se clarea la variable para el switch de operaciones
         clearDisplay();
       }else if (key=="igual"){
-        //Acá va el código de la operación
-      }else {
-        //Digitar y mostrar en clearDisplay
-        setDisplay();
+
+        num2 = document.getElementById("display").textContent
+        console.log("Número 2: " + num2);
+        getOperation(num1, num2,operator); //Se generar para empezar la operación
+
+
+      }else if (classAux.indexOf("tecla") !=-1) {
+        //Digitar y mostrar en Display solo si pertenece a la calculadora
+        setDisplay(sw);
       }
 
     }
     function clearDisplay(){
       operator = "";
+      contNum = 1;
       document.getElementById("display").innerHTML ="0"
     }
-    function setDisplay(){
+    function setDisplay(sw){
+
       if (contNum <8) {
-        var aux = document.getElementById("display").textContent
-        if (aux=="0") {
-          document.getElementById("display").innerHTML = key;
+
+        var aux = document.getElementById("display").textContent //Variable auxiliar para manejar el contenido del display
+        if (aux=="0") { //Validar si el display está en 0 reemplazar el display
+          if (key == ".") {
+            document.getElementById("display").innerHTML = "0" + key;
+          }else {
+            document.getElementById("display").innerHTML = key;
+          }
         }else {
-            document.getElementById("display").innerHTML = aux + key;
+          if (aux.indexOf(".") != -1  && key == ".") {
+            console.log("No se permite ingresar más de un punto");
+          }else {
+            console.log("Key " + key);
+            if ((key == "+" || key == "-" || key == "*" || key == "/") && sw == false) {
+              num1 = document.getElementById("display").textContent;
+              console.log("Número 1: " + num1);
+              sw = true;
+              document.getElementById("display").innerHTML = 0;
+            }else {
+              document.getElementById("display").innerHTML = aux + key;
+              contNum++;
+            }
+
+          }
         }
-        contNum = contNum + 1;
-      }else {
-        alert("No puedes escribir más de 8 números")
       }
 
+    }
+
+    function getOperation(num1, num2, operator){
+      console.log("Número 1: " + num1 + " Número 2: " + num2 + " Operación: " + operator);
+      var result = "";
+      switch (operator) {
+        case "sumar":
+        result = parseInt(num1) + parseInt(num2);
+        document.getElementById("display").innerHTML = result;
+        console.log("Vamos a sumar");
+        break;
+
+        case "restar":
+        result = num1 - num2;
+        document.getElementById("display").innerHTML = result;
+        console.log("Vamos a restar");
+        break;
+
+        case "multiplicar":
+        result = num1 * num2;
+        document.getElementById("display").innerHTML = result;
+        console.log("Vamos a multiplicar");
+        break;
+        case "dividir":
+        result = num1 / num2;
+        document.getElementById("display").innerHTML = result;
+        console.log("Vamos a dividir");
+        break;
+        default:
+        alert("No vamos hacer nada")
+      }
     }
   })
 })()
