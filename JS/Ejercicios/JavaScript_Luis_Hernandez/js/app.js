@@ -16,12 +16,14 @@ var Calculadora = (function(){
     //Validar si donde se hace click pertenece a la calculadora
     classAux = e.className;
     if (classAux =="tecla") {
-      key = e.id
+      key = e.id //Capturar el ID en una variable para darle manejo en las demás funnciones
+      document.getElementById(key).onmousedown = pressKey(key);
+      document.getElementById(key).onmouseup = unpressKey(key);
     }else {
       key = "";
     }
     console.log("ID " + e.id + "ClassName: " + classAux);
-    validateDisplay()
+    validateDisplay();
     function validateDisplay(){
 
       var display = document.getElementById("display").textContent //Obtener el display
@@ -41,20 +43,17 @@ var Calculadora = (function(){
         key = "."
       }
 
-      if ((display == "0") && (key =="0" || key == "+" || key == "*" || key == "-" || key == "/")){
+      if ((display == "0") && (key =="0" || key == "+" || key == "*" || key == "-" || key == "/" || key =="sign")){
         alert("No puedes presionar la tecla " + key + " Si la calculadora está en cero") //No se permite utilizar teclas de operaciones o 0 si el display está en 0
-      }else if (key =="sign" || key =="raiz") {
+      }else if (key =="raiz") {
         alert("La operación " + key + " no está disponible en el momento!") //Se deshabilitan las operaciones sign y raiz
       }else if(key == "on"){
         //Se deja en 0 la calculadora y se clarea la variable para el switch de operaciones
         clearDisplay();
       }else if (key=="igual"){
-
-        num2 = document.getElementById("display").textContent
+        num2 = document.getElementById("display").textContent //Almacenar el número 2
         console.log("Número 2: " + num2);
         getOperation(num1, num2,operator); //Se generar para empezar la operación
-
-
       }else if (classAux.indexOf("tecla") !=-1) {
         //Digitar y mostrar en Display solo si pertenece a la calculadora
         setDisplay(sw);
@@ -86,7 +85,11 @@ var Calculadora = (function(){
               num1 = document.getElementById("display").textContent;
               console.log("Número 1: " + num1);
               sw = true;
-              document.getElementById("display").innerHTML = 0;
+              document.getElementById("display").innerHTML = "";
+            }else if (key == "sign") {
+              display = document.getElementById("display").textContent;
+              display = -parseInt(display);
+              document.getElementById("display").textContent = display;
             }else {
               document.getElementById("display").innerHTML = aux + key;
               contNum++;
@@ -121,12 +124,22 @@ var Calculadora = (function(){
         break;
         case "dividir":
         result = num1 / num2;
-        document.getElementById("display").innerHTML = result;
+
+        console.log(result.toPrecision(6));
+        document.getElementById("display").innerHTML = result.toPrecision(4);
         console.log("Vamos a dividir");
         break;
         default:
         alert("No vamos hacer nada")
       }
+    }
+    function pressKey(key){
+      document.getElementById(key).style.textShadow = "1px 1px 1px #666";
+      document.getElementById(key).style.width = "2%";
+    }
+    function unpressKey(key){
+      document.getElementById(key).textShadow = "5px 5px 5px #666";
+      document.getElementById(key).style.width = "22%";
     }
   })
 })()
