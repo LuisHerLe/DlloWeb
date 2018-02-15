@@ -1,7 +1,10 @@
 //Se crea función para capturar ID de los elementos a los que se da click, conversión de otros
 //Se crea como una función autoejegutable
-document.querySelectorAll(".tecla").addEventListener("onmousedown", function(){console.log(a);}, false);
-document.querySelectorAll(".tecla").addEventListener("onmouseup", function(){console.log(b);}, false);
+window.onload = function() {
+    var body = document.getElementsByTagName("body");
+    body.click();
+};
+
 
 var Calculadora = (function(){
   var key= ""; //Variable auxiliar para almacenar los Id's
