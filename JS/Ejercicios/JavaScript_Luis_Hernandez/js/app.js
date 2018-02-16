@@ -278,7 +278,7 @@ nine.addEventListener("mouseup",function(){
 
         case "dividir":
         result = parseInt(num1) / parseInt(num2);
-
+        console.log("Contando: " + result.length);
         console.log(result.toPrecision(6));
         document.getElementById("display").innerHTML = result.toPrecision(4);
         console.log("Vamos a dividir");
