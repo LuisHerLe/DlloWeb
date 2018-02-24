@@ -11,7 +11,7 @@
   $( document ).ready(function() {
 
     $(".logo").click(function(){
-      var tipoFont = $("body").css(["font-family","font-size","box-sizing"]);
+      var tipoFont = $("body").css(["font-family","font-size","box-sizing","width"]);
       $.each(tipoFont, function(tipo,value){
         window.alert(tipo + ":" + value);
       });
