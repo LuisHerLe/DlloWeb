@@ -1,0 +1,21 @@
+
+- argumentNames: Propiedad que prototype, agrega a las funciones y permite acceder a los nombres de los parámetros que esa función está esperando, es útil cuando se utilizan librerías.
+
+
+- bind: Se encarga de asignar un contexto específico a una función
+
+- defer: Método utilizado para aplazar la ejecución de una función, hasta el punto en el que el intérprete ya no tenga más código que analizar y ejecutar
+
+- delay: Método utilizado que recibe el lapso de tiempo que esperará el navegador para ejecutar la función
+
+- bindAsEventListene:
+
+- curry:
+
+- defer:
+
+- delay:
+
+- methodize:
+
+- wrap:
