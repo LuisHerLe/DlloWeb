@@ -1,0 +1,13 @@
+Objeto activo: Todos los objetos nativos como Array, String, Number, son herencias del objeto Objetct
+  - Cuando se crea un número o un string utilizando los objetos constructores a la hora de preuntar por su tipo y cómo eran interpretados por JS, era de tipo Object
+
+Los métodos más conocidos son:
+  - isArray
+  - isDate
+  - isElement
+  - isFunction
+  - isNumber
+  - isString
+  - isUndefined
+
+  Sirve hacer validaciones

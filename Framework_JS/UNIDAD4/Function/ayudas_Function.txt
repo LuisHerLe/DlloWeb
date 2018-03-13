@@ -12,10 +12,6 @@
 
 - curry:
 
-- defer:
-
-- delay:
-
 - methodize:
 
 - wrap:
