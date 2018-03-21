@@ -99,6 +99,24 @@ div[class^='col']{
 
 }
 
+/* ::::::::::::::::INICIO PERSONALIZADO::::::::::::::::  */
+/* Se crean estilos personalizados para filas e imágenes  */
+div[class^='row']{
+  width: 100%;
+  height: 14.2%;
+  display: block;
+  align-items: center;
+
+}
+img{
+  width: 55%;
+  border: none;
+  display:block;
+  margin:auto;
+}
+
+/* ::::::::::::::::fIN PERSONALIZADO::::::::::::::::  */
+
 .elemento{
   width: 99.4px;
   height: 96px;
